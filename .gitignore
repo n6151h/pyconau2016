@@ -1,0 +1,15 @@
+*.db
+data
+*.pyc
+*~
+env
+*.egg*
+zkpylons/public/att-data
+zkpylons/public/photocomp
+.testrepository
+.tox
+/GPATH
+/GRTAGS
+/GSYMS
+/GTAGS
+/ID

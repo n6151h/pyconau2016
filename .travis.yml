@@ -1,0 +1,15 @@
+language: python
+python: 2.7
+env:
+  - TOX_ENV=py27
+# command to install dependencies
+install: "pip install tox"
+# command to run tests
+script: tox -c tox.pip6.ini -e $TOX_ENV
+addons:
+  postgresql: 9.3
+  apt:
+    packages:
+      - pwgen
+before_script:
+  - psql -c 'create database zktest;' -U postgres

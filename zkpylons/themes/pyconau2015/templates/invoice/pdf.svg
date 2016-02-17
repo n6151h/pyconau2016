@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg:svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="pdf.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="428.01617"
+     inkscape:cy="900.67319"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="702"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <svg:defs
+     id="defs4">
+    <inkscape:perspective
+       id="perspective12271"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <svg:linearGradient
+       id="linearGradient4640">
+      <svg:stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4642" />
+      <svg:stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4644" />
+    </svg:linearGradient>
+    <inkscape:perspective
+       id="perspective2739"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2748"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3388" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3455" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3522" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3589" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3656" />
+    <inkscape:perspective
+       id="perspective3225"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </svg:defs>
+  <svg:metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </svg:metadata>
+  <svg:g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <svg:g
+       id="g2933"
+       transform="translate(0.1275339,-79.511159)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3261"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763686,178.15165)"><svg:flowRegion
+           id="flowRegion3263"><svg:rect
+             id="rect3265"
+             width="363.70688"
+             height="30.180138"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3859">desc 12</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3269"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.34847,178.15165)"><svg:flowRegion
+           id="flowRegion3271"><svg:rect
+             id="rect3273"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3275"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 12<value-of
+   select="invoice/items/item12/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3277"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.98476,178.63993)"><svg:flowRegion
+           id="flowRegion3279"><svg:rect
+             id="rect3281"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3283"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 12<value-of
+   select="invoice/items/item12/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,178.63993)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3285"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3287"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3289" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3291">sub 12<value-of
+   select="invoice/items/item12/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g3433"
+       transform="translate(239.92862,93.505676)">
+      <svg:rect
+         ry="12.18225"
+         rx="12.182251"
+         y="820.18738"
+         x="142.11334"
+         height="31.5371"
+         width="323.58582"
+         id="rect3423"
+         style="fill:#1c67ba;fill-opacity:0.58431373;fill-rule:evenodd;stroke:none;stroke-width:1.43878305px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <svg:flowRoot
+         transform="translate(590.83065,281.24971)"
+         style="font-size:48px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica"
+         id="flowRoot3425"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3427"><svg:rect
+             style="text-align:start;text-anchor:start"
+             y="544.12726"
+             x="-440.75742"
+             height="24.126774"
+             width="198.44878"
+             id="rect3429" /></svg:flowRegion><svg:flowPara
+           style="font-size:16px;font-weight:bold;text-align:start;text-anchor:start;font-family:DejaVu Sans"
+           id="flowPara3431">Amount Owing (AUD):</svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:text
+       id="text2621"
+       y="172.1601"
+       x="41.436577"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       xml:space="preserve"><svg:tspan
+         y="172.1601"
+         x="41.436577"
+         id="tspan2623"
+         sodipodi:role="line" /><svg:tspan
+         style="font-size:14px;font-weight:normal;font-family:DejaVu Sans"
+         y="199.92719"
+         x="41.436577"
+         id="tspan2625"
+         sodipodi:role="line">Attention:</svg:tspan></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica"
+       x="702.15344"
+       y="193.4454"
+       id="text2613"><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="193.4454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan2692" /><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="210.9454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan3196">ABN: 56 987 117 479</svg:tspan><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="228.4454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan3642">GPO Box 4788</svg:tspan><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="245.9454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan3644">Sydney NSW 2001</svg:tspan><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="263.4454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan3646">Australia</svg:tspan><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="280.9454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan2788">registration@pycon-org.au</svg:tspan><svg:tspan
+         sodipodi:role="line"
+         x="702.15344"
+         y="298.4454"
+         style="font-size:14px;font-weight:normal;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="tspan2790" /></svg:text>
+    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2705"
+       style="font-size:16px"
+       transform="translate(48.799061,-239.22906)"><svg:flowRegion
+         id="flowRegion2707"><svg:rect
+           id="rect2709"
+           width="323.0307"
+           height="162.23318"
+           x="87.577209"
+           y="423.52911"
+           style="font-size:16px" /></svg:flowRegion><svg:flowPara
+         id="flowPara2713"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">attn 1</svg:flowPara><svg:flowPara
+         id="flowPara2721"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">attn 2</svg:flowPara><svg:flowPara
+         id="flowPara2734"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">attn 3</svg:flowPara><svg:flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="flowPara2744">attn 4</svg:flowPara><svg:flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="flowPara2746">attn 5</svg:flowPara><svg:flowSpan
+         style="font-size:14px;-inkscape-font-specification:DejaVu Sans;font-family:DejaVu Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         id="flowSpan2760">attn 6</svg:flowSpan><svg:flowPara
+         id="flowPara2736"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans" /><svg:flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="flowPara2764">attn 7</svg:flowPara><svg:flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="flowPara2768">attn email</svg:flowPara><svg:flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         id="flowPara2766" /></svg:flowRoot>    <svg:path
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38.966715,391.2154 L 705.12777,391.2154"
+       id="path3353" />
+    <svg:path
+       id="path2798"
+       d="M 38.966714,418.70075 L 705.12777,418.70075"
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <svg:text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#1c67ba;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       x="41.83807"
+       y="396.65161"
+       id="text3357"
+       transform="scale(0.969653,1.0312967)"><svg:tspan
+         sodipodi:role="line"
+         id="tspan3359"
+         x="41.83807"
+         y="396.65161"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Description</svg:tspan></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#1c67ba;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       x="427.71948"
+       y="396.65161"
+       id="text3361"
+       transform="scale(0.969653,1.0312967)"><svg:tspan
+         sodipodi:role="line"
+         id="tspan3363"
+         x="427.71948"
+         y="396.65161"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Quantity</svg:tspan></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#1c67ba;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       x="534.92804"
+       y="397.9241"
+       id="text3365"
+       transform="scale(0.969653,1.0312967)"><svg:tspan
+         sodipodi:role="line"
+         id="tspan3367"
+         x="534.92804"
+         y="397.9241"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans">Cost</svg:tspan></svg:text>
+    <svg:text
+       id="text3369"
+       y="398.05103"
+       x="649.46918"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#1c67ba;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       xml:space="preserve"
+       transform="scale(0.969653,1.0312967)"><svg:tspan
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         y="398.05103"
+         x="649.46918"
+         id="tspan3371"
+         sodipodi:role="line">Total</svg:tspan></svg:text>
+    <svg:g
+       id="g2949"
+       transform="translate(0,-24.509896)">
+      <svg:text
+         id="text3327"
+         y="893.19751"
+         x="527.21051"
+         style="font-size:48px;font-style:normal;font-weight:normal;fill:#1c67ba;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         xml:space="preserve"><svg:tspan
+           style="font-size:16px;font-weight:bold;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans Mono"
+           y="893.19751"
+           x="527.21051"
+           id="tspan3329"
+           sodipodi:role="line">Total</svg:tspan></svg:text>
+      <svg:flowRoot
+         transform="translate(436.74805,263.26126)"
+         style="font-size:16px;text-align:end;text-anchor:end"
+         id="flowRoot3381"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3383"><svg:rect
+             style="font-size:16px;text-align:end;text-anchor:end"
+             y="613.04047"
+             x="132.08366"
+             height="22.971077"
+             width="129.21223"
+             id="rect3385" /></svg:flowRegion><svg:flowPara
+           style="font-size:16px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3387">inv amount</svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2740"
+       transform="translate(0,-33.030898)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3439"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="matrix(1,0,0,1.0635729,-38.728516,-221.71747)"><svg:flowRegion
+           id="flowRegion3441"><svg:rect
+             id="rect3443"
+             width="359.76547"
+             height="28.961477"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3148">desc 1</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3447"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="matrix(1,0,0,1.0635729,328.23909,-221.71747)"><svg:flowRegion
+           id="flowRegion3449"><svg:rect
+             id="rect3451"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3453"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 1<value-of
+   select="invoice/items/item1/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="matrix(1,0,0,1.0635729,408.87538,-221.7857)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3777"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3779"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="18.286243"
+             width="87.577217"
+             id="rect3781" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3783">each 1<value-of
+   select="invoice/items/item1/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="matrix(1,0,0,1.0635729,481.21485,-221.19815)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3431"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3433"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3435" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3437">sub 1<value-of
+   select="invoice/items/item1/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2758"
+       transform="translate(0.1275339,-39.08289)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3469"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763692,-145.49363)"><svg:flowRegion
+           id="flowRegion3471"><svg:rect
+             id="rect3473"
+             width="360.58188"
+             height="29.008263"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3146">desc 2</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3477"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.34847,-145.49363)"><svg:flowRegion
+           id="flowRegion3479"><svg:rect
+             id="rect3481"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3483"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 2<value-of
+   select="invoice/items/item2/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3485"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.98476,-145.00535)"><svg:flowRegion
+           id="flowRegion3487"><svg:rect
+             id="rect3489"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3491"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 2<value-of
+   select="invoice/items/item2/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,-145.00535)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3493"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3495"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3497" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3499">sub 2<value-of
+   select="invoice/items/item2/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2794"
+       transform="translate(-0.1127005,-75.705841)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3501"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763682,-80.7646)"><svg:flowRegion
+           id="flowRegion3503"><svg:rect
+             id="rect3505"
+             width="354.33188"
+             height="28.617638"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3150">desc 3</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3509"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.0682,-80.7646)"><svg:flowRegion
+           id="flowRegion3511"><svg:rect
+             id="rect3513"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3515"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 3<value-of
+   select="invoice/items/item3/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3517"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(407.26699,-80.276319)"><svg:flowRegion
+           id="flowRegion3519"><svg:rect
+             id="rect3521"
+             width="89.012909"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3523"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 3<value-of
+   select="invoice/items/item3/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,-80.276319)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3525"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3527"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3529" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3531">sub 3<value-of
+   select="invoice/items/item3/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2848"
+       transform="translate(-0.3998098,-112.32883)">
+      <svg:g
+         id="g2830">
+        <svg:flowRoot
+           transform="translate(408.36953,-15.547254)"
+           style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+           id="flowRoot3455"
+           xml:space="preserve"><svg:flowRegion
+             id="flowRegion3457"><svg:rect
+               style="font-size:12px;text-align:end;text-anchor:end"
+               y="634.57581"
+               x="78.963058"
+               height="18.286243"
+               width="87.577217"
+               id="rect3459" /></svg:flowRegion><svg:flowPara
+             style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+             id="flowPara3461">each 4<value-of
+   select="invoice/items/item4/each" /></svg:flowPara></svg:flowRoot>        <svg:flowRoot
+           transform="translate(-38.763682,-16.035535)"
+           style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+           id="flowRoot3533"
+           xml:space="preserve"><svg:flowRegion
+             id="flowRegion3535"><svg:rect
+               style="font-size:12px"
+               y="634.57581"
+               x="78.963058"
+               height="29.008263"
+               width="359.80063"
+               id="rect3537" /></svg:flowRegion><svg:flowPara
+             style="font-size:12px;font-family:DejaVu Sans"
+             id="flowPara3152">desc 4</svg:flowPara></svg:flowRoot>        <svg:flowRoot
+           transform="translate(327.73323,-16.035535)"
+           style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+           id="flowRoot3541"
+           xml:space="preserve"><svg:flowRegion
+             id="flowRegion3543"><svg:rect
+               style="font-size:12px;text-align:end;text-anchor:end"
+               y="634.57581"
+               x="78.963058"
+               height="21.535383"
+               width="66.04184"
+               id="rect3545" /></svg:flowRegion><svg:flowPara
+             style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+             id="flowPara3547">qty 4<value-of
+   select="invoice/items/item4/qty" /></svg:flowPara></svg:flowRoot>        <svg:flowRoot
+           xml:space="preserve"
+           id="flowRoot3557"
+           style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+           transform="translate(481.21485,-15.547254)"><svg:flowRegion
+             id="flowRegion3559"><svg:rect
+               id="rect3561"
+               width="139.26213"
+               height="21.535383"
+               x="78.963058"
+               y="634.57581"
+               style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+             id="flowPara3563"
+             style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">sub 4<value-of
+   select="invoice/items/item4/subtotal" /></svg:flowPara></svg:flowRoot>      </svg:g>
+    </svg:g>
+    <svg:g
+       id="g2951"
+       transform="translate(-0.2162198,-148.95184)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3565"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763683,48.69353)"><svg:flowRegion
+           id="flowRegion3567"><svg:rect
+             id="rect3569"
+             width="365.26938"
+             height="28.617638"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3879">desc 5</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3573"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.17073,48.69353)"><svg:flowRegion
+           id="flowRegion3575"><svg:rect
+             id="rect3577"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3579"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 5<value-of
+   select="invoice/items/item5/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3581"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.80703,49.181811)"><svg:flowRegion
+           id="flowRegion3583"><svg:rect
+             id="rect3585"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3587"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 5<value-of
+   select="invoice/items/item5/each" /></svg:flowPara></svg:flowRoot>      <svg:g
+         id="g2885">
+        <svg:flowRoot
+           xml:space="preserve"
+           id="flowRoot3589"
+           style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+           transform="translate(481.40626,49.181811)"><svg:flowRegion
+             id="flowRegion3591"><svg:rect
+               id="rect3593"
+               width="139.26213"
+               height="21.535383"
+               x="78.963058"
+               y="634.57581"
+               style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+             id="flowPara3595"
+             style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">sub 5<value-of
+   select="invoice/items/item5/subtotal" /></svg:flowPara></svg:flowRoot>      </svg:g>
+    </svg:g>
+    <svg:g
+       id="g2897"
+       transform="translate(-0.3177786,-185.57483)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3597"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763686,113.4226)"><svg:flowRegion
+           id="flowRegion3599"><svg:rect
+             id="rect3601"
+             width="358.23813"
+             height="29.398888"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3829">desc 6</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3605"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(327.82894,113.4226)"><svg:flowRegion
+           id="flowRegion3607"><svg:rect
+             id="rect3609"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3611"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 6<value-of
+   select="invoice/items/item6/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3613"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.46523,113.91087)"><svg:flowRegion
+           id="flowRegion3615"><svg:rect
+             id="rect3617"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3619"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 6<value-of
+   select="invoice/items/item6/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,113.91087)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3621"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3623"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3625" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3627">sub 6<value-of
+   select="invoice/items/item6/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:path
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.71669686px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 585.5728,391.19735 L 585.5728,903.73563"
+       id="path3739"
+       sodipodi:nodetypes="cc" />
+    <svg:path
+       id="path3737"
+       d="M 483.42215,391.62049 L 483.42215,848.68776"
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.68289083px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <svg:g
+       id="g2776"
+       transform="translate(-4.8247349e-2,69.082975)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3101"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763682,-113.12913)"><svg:flowRegion
+           id="flowRegion3103"><svg:rect
+             id="rect3105"
+             width="359.01938"
+             height="33.695763"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3831">desc 7</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3109"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.14339,-113.12913)"><svg:flowRegion
+           id="flowRegion3111"><svg:rect
+             id="rect3113"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3115"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 7<value-of
+   select="invoice/items/item7/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(408.77968,-112.64085)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3117"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3119"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="18.286243"
+             width="87.577217"
+             id="rect3121" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3123">each 7<value-of
+   select="invoice/items/item7/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,-112.64085)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3133"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3135"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3137" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3139">sub 7<value-of
+   select="invoice/items/item7/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2812"
+       transform="translate(-0.2533255,34.786163)">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3141"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763692,-48.400067)"><svg:flowRegion
+           id="flowRegion3143"><svg:rect
+             id="rect3145"
+             width="359.01938"
+             height="29.008263"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3889">desc 8</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3149"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(327.90413,-48.400067)"><svg:flowRegion
+           id="flowRegion3151"><svg:rect
+             id="rect3153"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3155"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 8<value-of
+   select="invoice/items/item8/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3157"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.54042,-47.911786)"><svg:flowRegion
+           id="flowRegion3159"><svg:rect
+             id="rect3161"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3163"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 8<value-of
+   select="invoice/items/item8/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,-47.911786)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3165"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3167"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3169" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3171">sub 8<value-of
+   select="invoice/items/item8/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2867"
+       transform="translate(-0.229888,-2.0067448)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3173"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763682,16.328998)"><svg:flowRegion
+           id="flowRegion3175"><svg:rect
+             id="rect3177"
+             width="358.23813"
+             height="29.789513"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3853">desc 9</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3181"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(327.93148,16.328998)"><svg:flowRegion
+           id="flowRegion3183"><svg:rect
+             id="rect3185"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3187"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 9<value-of
+   select="invoice/items/item9/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3189"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(407.13027,16.817279)"><svg:flowRegion
+           id="flowRegion3191"><svg:rect
+             id="rect3193"
+             width="89.012909"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3195"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 9<value-of
+   select="invoice/items/item9/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,16.817279)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3197"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3199"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3201" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3203">sub 9<value-of
+   select="invoice/items/item9/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g2970"
+       transform="translate(-0.276763,-38.629731)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3125"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.51308,81.546343)"><svg:flowRegion
+           id="flowRegion3127"><svg:rect
+             id="rect3129"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3131"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 10<value-of
+   select="invoice/items/item10/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3205"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763682,81.058063)"><svg:flowRegion
+           id="flowRegion3207"><svg:rect
+             id="rect3209"
+             width="351.20688"
+             height="29.008263"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3855">desc 10</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3213"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(327.87679,81.058063)"><svg:flowRegion
+           id="flowRegion3215"><svg:rect
+             id="rect3217"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3219"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 10<value-of
+   select="invoice/items/item10/qty" /></svg:flowPara></svg:flowRoot>      <svg:g
+         id="g2891"
+         style="font-size:12px">
+        <svg:flowRoot
+           xml:space="preserve"
+           id="flowRoot3221"
+           style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+           transform="translate(481.21485,81.546343)"><svg:flowRegion
+             id="flowRegion3223"><svg:rect
+               id="rect3225"
+               width="139.26213"
+               height="21.535383"
+               x="78.963058"
+               y="634.57581"
+               style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+             id="flowPara3227"
+             style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">sub 10<value-of
+   select="invoice/items/item10/subtotal" /></svg:flowPara></svg:flowRoot>      </svg:g>
+    </svg:g>
+    <svg:g
+       id="g2915"
+       transform="translate(3.3783901e-2,-75.252719)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3229"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763683,145.78713)"><svg:flowRegion
+           id="flowRegion3231"><svg:rect
+             id="rect3233"
+             width="361.36313"
+             height="29.789513"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3857">desc 11</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3237"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.23909,145.78713)"><svg:flowRegion
+           id="flowRegion3239"><svg:rect
+             id="rect3241"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3243"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 11<value-of
+   select="invoice/items/item11/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3245"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.87538,146.27541)"><svg:flowRegion
+           id="flowRegion3247"><svg:rect
+             id="rect3249"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3251"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 11<value-of
+   select="invoice/items/item11/each" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,146.27541)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3253"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3255"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3257" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3259">sub 11<value-of
+   select="invoice/items/item11/subtotal" /></svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot4347"
+       style="fill:black;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;font-family:URW Chancery L;font-style:italic;font-weight:bold;font-size:6px;text-anchor:middle;text-align:center;-inkscape-font-specification:URW Chancery L Bold Italic;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion4349"><svg:rect
+           id="rect4351"
+           width="82.737785"
+           height="11.674656"
+           x="538.04938"
+           y="179.80852" /></svg:flowRegion><svg:flowPara
+         id="flowPara4353" /></svg:flowRoot>    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot4355"
+       style="fill:black;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;font-family:URW Chancery L;font-style:italic;font-weight:bold;font-size:6px;text-anchor:middle;text-align:center;-inkscape-font-specification:URW Chancery L Bold Italic;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion4357"><svg:rect
+           id="rect4359"
+           width="115.22379"
+           height="12.689844"
+           x="537.54181"
+           y="180.8237" /></svg:flowRegion><svg:flowPara
+         id="flowPara4361" /></svg:flowRoot>    <svg:flowRoot
+       transform="translate(-92.052745,267.05857)"
+       style="font-size:16px"
+       id="flowRoot2810"
+       xml:space="preserve"><svg:flowRegion
+         id="flowRegion2812"><svg:rect
+           style="font-size:16px"
+           y="613.04047"
+           x="132.08366"
+           height="22.971077"
+           width="446.50015"
+           id="rect2814" /></svg:flowRegion><svg:flowPara
+         style="font-size:14px;font-family:DejaVu Sans"
+         id="flowPara2816">Includes 10% Australian Goods and Services Tax</svg:flowPara></svg:flowRoot>    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2802"
+       style="font-size:16px;text-align:end;text-anchor:end"
+       transform="translate(437.21583,267.05857)"><svg:flowRegion
+         id="flowRegion2804"><svg:rect
+           id="rect2806"
+           width="129.21223"
+           height="22.971077"
+           x="132.08366"
+           y="613.04047"
+           style="font-size:16px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+         id="flowPara2808"
+         style="font-size:14px;text-align:end;text-anchor:end;font-family:DejaVu Sans"><value-of
+           select="invoice/gst" /></svg:flowPara></svg:flowRoot>    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2676"
+       style="font-size:14px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#83acd9;fill-opacity:1;stroke:none;font-family:Helvetica"
+       transform="translate(407.69197,245.52732)"><svg:flowRegion
+         id="flowRegion2678"><svg:rect
+           id="rect2680"
+           width="87.577217"
+           height="18.286243"
+           x="78.963058"
+           y="634.57581"
+           style="font-size:14px;text-align:end;text-anchor:end;fill:#83acd9;fill-opacity:1" /></svg:flowRegion><svg:flowPara
+         id="flowPara2682"
+         style="font-size:14px;text-align:end;text-anchor:end;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans">AU GST </svg:flowPara></svg:flowRoot>    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2681"
+       style="fill:black;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:12px;text-anchor:middle;text-align:center"><svg:flowRegion
+         id="flowRegion2683"><svg:rect
+           id="rect2685"
+           width="314.0625"
+           height="71.09375"
+           x="-44.53125"
+           y="145.33093" /></svg:flowRegion><svg:flowPara
+         id="flowPara2687" /></svg:flowRoot>    <svg:text
+       id="text2607"
+       y="342.3512"
+       x="488.2644"
+       style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       xml:space="preserve"><svg:tspan
+         y="342.3512"
+         x="488.2644"
+         id="tspan2609"
+         sodipodi:role="line"
+         style="font-size:16px" /><svg:tspan
+         id="tspan2611"
+         y="360.3577"
+         x="488.2644"
+         sodipodi:role="line"
+         style="font-size:14px">Invoice No:</svg:tspan></svg:text>
+    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2661"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       transform="translate(413.16016,-130.25304)"><svg:flowRegion
+         id="flowRegion2663"><svg:rect
+           id="rect2665"
+           width="330.20917"
+           height="21.535379"
+           x="192.38272"
+           y="476.64972" /></svg:flowRegion><svg:flowPara
+         id="flowPara2667"
+         style="font-size:14px;font-family:DejaVu Sans">inv num<value-of
+   select="invoice/number" /></svg:flowPara></svg:flowRoot>    <svg:flowRoot
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       id="flowRoot2669"
+       xml:space="preserve"
+       transform="translate(412.94141,-147.2541)"><svg:flowRegion
+         id="flowRegion2671"><svg:rect
+           y="476.64972"
+           x="192.38272"
+           height="20.099688"
+           width="346.00177"
+           id="rect2673" /></svg:flowRegion><svg:flowPara
+         style="font-size:14px;font-family:DejaVu Sans"
+         id="flowPara2675">issued day issued month, issued year</svg:flowPara></svg:flowRoot>    <svg:text
+       id="text2684"
+       y="342.86639"
+       x="488.2644"
+       style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       xml:space="preserve"><svg:tspan
+         id="tspan2689"
+         y="342.86639"
+         x="488.2644"
+         sodipodi:role="line"
+         style="font-size:14px">Invoice Date:</svg:tspan></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="646.6875"
+       y="376.9306"
+       id="text2697"><svg:tspan
+         sodipodi:role="line"
+         id="tspan2699"
+         x="646.6875"
+         y="376.9306"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans" /></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="528.78784"
+       y="376.9306"
+       id="text2701"><svg:tspan
+         sodipodi:role="line"
+         id="tspan2703"
+         x="528.78784"
+         y="376.9306"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans" /></svg:text>
+    <svg:text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="203.90625"
+       y="374.21674"
+       id="text3597"><svg:tspan
+         sodipodi:role="line"
+         id="tspan3599"
+         x="203.90625"
+         y="374.21674"
+         style="font-size:14px">linux.conf.au is a project of Linux Australia Inc.</svg:tspan></svg:text>
+    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot3633"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+       transform="translate(849.14649,374.75538)"><svg:flowRegion
+         id="flowRegion3635"><svg:rect
+           id="rect3637"
+           width="288.57407"
+           height="21.535374"
+           x="-440.75742"
+           y="544.12726" /></svg:flowRegion><svg:flowPara
+         id="flowPara3639"
+         style="font-size:16px;font-weight:bold;text-align:end;text-anchor:end;font-family:DejaVu Sans">inv owed</svg:flowPara></svg:flowRoot>    <svg:path
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38.966714,876.43933 L 705.12772,876.43933"
+       id="path2931" />
+    <svg:path
+       id="path2933"
+       d="M 38.966714,903.92468 L 705.12772,903.92468"
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <svg:path
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38.966714,848.97108 L 705.12771,848.97108"
+       id="path2941" />
+    <svg:path
+       id="path2762"
+       d="M 406.96504,391.29266 L 406.96504,848.53257"
+       style="fill:#1c67ba;fill-opacity:1;fill-rule:evenodd;stroke:#1c67ba;stroke-width:0.68289077px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2583"
+       style="font-size:48px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica"
+       transform="translate(-21.249017,-52.766024)"><svg:flowRegion
+         id="flowRegion2585"><svg:rect
+           id="rect2587"
+           width="218.22522"
+           height="86.141533"
+           x="502.49219"
+           y="193.81841"
+           style="text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+         id="flowPara2589"
+         style="font-size:24px;font-weight:bold;text-align:end;text-anchor:end;fill:#1c67ba;fill-opacity:1;font-family:DejaVu Sans Mono">Tax Invoice</svg:flowPara><svg:flowPara
+         style="font-size:20px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+         id="flowPara2763">Linux Australia Inc.</svg:flowPara><svg:flowPara
+         id="flowPara2597"
+         style="text-align:end;text-anchor:end;font-family:DejaVu Sans" /><svg:flowPara
+         id="flowPara2599"
+         style="text-align:end;text-anchor:end;font-family:DejaVu Sans" /><svg:flowPara
+         id="flowPara2595"
+         style="text-align:end;text-anchor:end;font-family:DejaVu Sans" /></svg:flowRoot>    <svg:flowRoot
+       xml:space="preserve"
+       id="flowRoot2691"
+       style="fill:black;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;font-family:DejaVu Sans;font-style:normal;font-weight:normal;font-size:12px;text-anchor:middle;text-align:center;-inkscape-font-specification:DejaVu Sans;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion2693"><svg:rect
+           id="rect2695"
+           width="57.8125"
+           height="376.5625"
+           x="422.65625"
+           y="458.61218" /></svg:flowRegion><svg:flowPara
+         id="flowPara2697" /></svg:flowRoot>    <svg:g
+       id="g3835"
+       transform="translate(10.79501,21.38282)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot2991"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-49.671396,105.36375)"><svg:flowRegion
+           id="flowRegion2993"><svg:rect
+             id="rect2995"
+             width="358.23813"
+             height="28.617638"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3861">desc 13</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot2999"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(317.44076,105.36375)"><svg:flowRegion
+           id="flowRegion3001"><svg:rect
+             id="rect3003"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3005"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 13</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3007"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(398.07705,105.85203)"><svg:flowRegion
+           id="flowRegion3009"><svg:rect
+             id="rect3011"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3013"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 13</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(470.30714,105.85203)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3015"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3017"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3019" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3021">sub 13</svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g3023"
+       transform="translate(-0.3998098,-23.299001)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3025"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763686,178.15165)"><svg:flowRegion
+           id="flowRegion3027"><svg:rect
+             id="rect3029"
+             width="357.45688"
+             height="29.398888"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3863">desc 14</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3033"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.34847,178.15165)"><svg:flowRegion
+           id="flowRegion3035"><svg:rect
+             id="rect3037"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3039"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 14</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3041"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.98476,178.63993)"><svg:flowRegion
+           id="flowRegion3043"><svg:rect
+             id="rect3045"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3047"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 14</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,178.63993)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3049"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3051"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3053" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3055">sub 14</svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:g
+       id="g3091"
+       transform="translate(-2.48098e-2,4.8070626)"
+       style="font-size:12px">
+      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3093"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(-38.763686,178.15165)"><svg:flowRegion
+           id="flowRegion3095"><svg:rect
+             id="rect3097"
+             width="356.67563"
+             height="29.398888"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;font-family:DejaVu Sans"
+           id="flowPara3865">desc 15</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3102"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(328.34847,178.15165)"><svg:flowRegion
+           id="flowRegion3104"><svg:rect
+             id="rect3106"
+             width="66.04184"
+             height="21.535383"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3108"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">qty 15</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         xml:space="preserve"
+         id="flowRoot3110"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         transform="translate(408.98476,178.63993)"><svg:flowRegion
+           id="flowRegion3112"><svg:rect
+             id="rect3114"
+             width="87.577217"
+             height="18.286243"
+             x="78.963058"
+             y="634.57581"
+             style="font-size:12px;text-align:end;text-anchor:end" /></svg:flowRegion><svg:flowPara
+           id="flowPara3116"
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans">each 15</svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(481.21485,178.63993)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+         id="flowRoot3118"
+         xml:space="preserve"><svg:flowRegion
+           id="flowRegion3120"><svg:rect
+             style="font-size:12px;text-align:end;text-anchor:end"
+             y="634.57581"
+             x="78.963058"
+             height="21.535383"
+             width="139.26213"
+             id="rect3122" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3124">sub 15</svg:flowPara></svg:flowRoot>    </svg:g>
+    <svg:image
+       y="23.091328"
+       x="567.50189"
+       id="image3628"
+       xlink:href="data:image/png;base64,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
+AElFTkSuQmCC
+"
+       height="121.73204"
+       width="134.34174" />
+  </svg:g>
+</svg:svg>
