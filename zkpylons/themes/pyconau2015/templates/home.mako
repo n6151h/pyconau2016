@@ -33,7 +33,7 @@
             <span data-src="img/banner-default.png" data-media="(min-width: 1171px)"></span>
 
             <noscript>
-                <img src="img/banner-default.png" alt="PyCon AU 2014">
+                <img src="/img/banner-default.jpg" alt="PyCon AU 2014">
             </noscript>
         </span>
     </div>

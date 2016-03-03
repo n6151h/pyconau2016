@@ -51,7 +51,8 @@ ${ h.hidden('person.company', value='') }</p>
     </div>
 % endif
 <br />
-%if c.config.get('personal_info')['phone'] == 'yes':
+<% print "PERSONAL INFO: ", c.config.get('personal_info', category='rego') %>
+%if c.config.get('personal_info', category='rego')['phone'] == 'yes':
     <div class="form-group">
       <div class="input-group">
         <input type="text" id="personphone" class="form-control" placeholder="Phone Number" name="person.phone" required />
@@ -64,7 +65,7 @@ ${ h.hidden('person.phone') }
 ${ h.hidden('person.mobile') }
 %endif
 
-%if c.config.get('personal_info')['home_address'] == 'yes':
+%if c.config.get('personal_info', category='rego')['home_address'] == 'yes':
     <div class="form-group">
       <div class="input-group">
         <input type="text" id="personaddress1" class="form-control" placeholder="Address" name="person.address1" required />

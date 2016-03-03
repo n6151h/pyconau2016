@@ -3,7 +3,7 @@
 
 <%
 
-url = h.lca_info["event_permalink"] + h.url_for()
+url = c.event_permalink + h.url_for()
 %>
 
 <h1>${ c.db_content.title }</h1>

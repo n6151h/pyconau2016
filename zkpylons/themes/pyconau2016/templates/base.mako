@@ -126,7 +126,7 @@
         </div>
        <div class="col-md-8 col-md-offset-2">
           <br />
-          <img class="featurette-image img-responsive center-block" src="/img/Geelong-Wave-Gradient-greyscale-small.png" alt="Geelong 2016">
+          <img class="featurette-image img-responsive center-block" src="/img/logo-mel-sm.png" alt="Melbourne 2016">
         </div>
       </div>
 <%doc>
@@ -171,9 +171,9 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="/img/bollards2.jpg" alt="Geelong" width="140" height="140">
-          <h2>About Geelong</h2>
-          <p>Geelong is Victoria's second largest city, located on Corio Bay, and within a short drive from popular beach-front communities on the Bellarine Peninsula as well as being the gateway to the famous Great Ocean Road</p>
+          <img class="img-circle" src="/img/MelbConvCtr.jpg" alt="Melbourne" width="140" height="140">
+          <h2>About Melbourne</h2>
+          <p>Melbourne is Victoria's capitals city, located on Port Philip Bay, and makes all other Australian cities seem like little more than a tinny of warm Foster's left open for a week.</p>
           <p><a class="btn btn-default" href="/about/geelong" role="button">More Info &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -194,7 +194,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <p style="text-align: center;">&copy; 2015 linux.conf.au 2016 and <a href="http://linux.org.au">Linux Australia</a> &middot; Linux is a registered trademark of Linus Torvalds &middot; <a href="/sitemap">Sitemap</a></p>
+        <p style="text-align: center;">&copy; 2016 pycon-org.au 2016 and <a href="http://pycon.au">PyCon Australia</a> &middot; Linux is a registered trademark of Linus Torvalds &middot; <a href="/sitemap">Sitemap</a></p>
         <p class="pull-right"><a href="#">Back to top</a></p>
       </footer>
 
