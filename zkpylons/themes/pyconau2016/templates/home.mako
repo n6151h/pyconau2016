@@ -9,8 +9,7 @@ for d in c.db_content_news_all:
         featured.append(d)
         count += 1
 %>
-                                            <h1>
-                              Welcome to ${ c.config.get('event_name') }!</h1>
+<h1>Welcome to ${ c.config.get('event_name') }!</h1>
 
 % if c.db_content is not None:
   <p class="lead">

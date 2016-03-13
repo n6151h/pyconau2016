@@ -3,15 +3,10 @@
         'about': ['Pycon Australia', 'Venue', 'History', 'Harassment'],
         'melbourne': ['About', 'Sightseeing'],
         'sponsors': ['Sponsors', 'Why Sponsor'],
+        'programme': ['About', 'Call for Proposals'],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
-        #'programme': ['About', 'Papers', 'Miniconfs', 'Presentations', 'Posters', 'Tutorials'], # stage 1
-        #'programme': ['About', 'Keynotes', 'Miniconf Info', 'Papers Info', 'Social Events', 'Open Day', 'Partners Programme'], # stage 2
-        #'programme': ['About', 'Keynotes', 'Miniconfs', 'Speakers Info', 'Social Events', 'Open Day', 'Partners Programme'], # stage 2a
-        'programme': ['About', 'Keynotes', 'Miniconfs', 'Schedule', 'Social Events', 'Open Day', 'Partners Programme'], # stage 3
-        #'programme': ['About', 'Keynotes', 'Miniconfs','Schedule','Social Events','Open Day', 'Partners Programme'], # stage 4?
-        'register': ['Prices', 'Accommodation', 'Terms and Conditions'],
-        #'register': ['Prices', 'Funding', 'Accommodation', 'Terms and Conditions'],
-        #'register': ['Prices/Ticket types','Terms and Conditions','Accommodation','Partners programme'], # stage 4
+        'register': ['Prices', 'Terms and Conditions'],
+        #'register': ['Prices', 'Funding', 'Terms and Conditions'],
         'media': ['News','In the press','Graphics']
     }
 
@@ -24,15 +19,13 @@
     mm = [
         ('Home', '/', 'home'),
         ('About', '/about/pycon2016.au', 'about'),
-        ('Melbourne', '/melbourne/about', 'melbourne'),
+#        ('Melbourne', '/melbourne/about', 'melbourne'),
         ('Sponsors', '/sponsors/sponsors', 'sponsors'),
         ('Programme', '/programme/about', 'programme'),
-        ('Register', '/register/prices', 'register'),
-        #('Register', '/register/prices', 'register'), # -- Stage 4
-        ('Media', '/media/news', 'media'),
+#        ('Register', '/register/prices', 'register'),
+#        ('Media', '/media/news', 'media'),
         ('Contact', '/contact', 'contact'),
-        #('Planet', 'http://planet.lca2011.linux.org.au', 'planet'),
-        ('Wiki', '/wiki', 'wiki'),
+#        ('Wiki', '/wiki', 'wiki'),
     ]
 
     where = ''
