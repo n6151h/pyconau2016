@@ -1,5 +1,4 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel"
-style="background-image: url(/MelbConvCtr.jpg);">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 %if len(c.db_content_banner) > 0:
 <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -13,7 +12,8 @@ style="background-image: url(/MelbConvCtr.jpg);">
       <% count = count + 1 %>
 %   endfor
       </ol>
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox"
+	style="background: url(/img/mcec_mini.jpg) no-repeat center center fixed;">
 
    <% count = 0 %>
 %   for d in c.db_content_banner:
