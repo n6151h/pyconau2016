@@ -209,8 +209,9 @@ ${ len(a.content) } B
       <label for="name" class="col-sm-2 control-label">Speakers phone</label>
       <div class="input-group col-sm-10">
       <div class="input-group">
-        <input class="form-control" id="personphone" name="person.phone" required></input>
+        <input class="form-control" id="personphone" name="people.phone" required></input>
         <span class="input-group-addon" id="basic-addon2">required</span>
+        ${h.hidden('person.mobile')}
       </div>
       <p class="help-block">The conference team will need this to contact you during the conference week. If you don't have one, or do not wish to provide it, then enter NONE in this field</p>
       </div>
@@ -248,7 +249,7 @@ ${ len(a.content) } B
       <div class="checkbox">
       <label>
         <input type="checkbox" id="proposalvideo_release" name="proposal.video_release">
-        I allow ${ c.config.get["event_parent_organisation"] } to release any recordings of my presentations, tutorials and minconfs under the <a href="${ c.config.get["media_license_url"] }">${ c.config.get["media_license_name"] }</a>
+        I allow ${ c.config.get("event_parent_organisation") } to release any recordings of my presentations, tutorials and minconfs under the <a href="${ c.config.get("media_license_url") }">${ c.config.get("media_license_name") }</a>
       </label>
       </div>
     </div>
@@ -257,7 +258,7 @@ ${ len(a.content) } B
       <div class="checkbox">
       <label>
         <input type="checkbox" id="proposalslides_release" name="proposal.slides_release">
-        I allow ${ c.config.get["event_parent_organisation"] } to release any other material (such as slides) from my presentations, tutorials and minconfs under the <a href="${ c.config.get["media_license_url"] }">${ c.config.get["media_license_name"] }</a>
+        I allow ${ c.config.get("event_parent_organisation") } to release any other material (such as slides) from my presentations, tutorials and minconfs under the <a href="${ c.config.get("media_license_url") }">${ c.config.get("media_license_name") }</a>
       </label>
       </div>
     </div>

@@ -12,6 +12,7 @@ class PersonSchema(FormSchema):
     firstname = String(maxlength=1024)
     lastname = String(maxlength=1024)
     phone = String(maxlength=32)
+    mobile = String(maxlength=32)
     fax = String(maxlength=32)
 
     chained_validators = [

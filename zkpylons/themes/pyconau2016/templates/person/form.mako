@@ -51,7 +51,6 @@ ${ h.hidden('person.company', value='') }</p>
     </div>
 % endif
 <br />
-<% print "PERSONAL INFO: ", c.config.get('personal_info', category='rego') %>
 %if c.config.get('personal_info', category='rego')['phone'] == 'yes':
     <div class="form-group">
       <div class="input-group">
