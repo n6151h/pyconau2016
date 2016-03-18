@@ -32,6 +32,7 @@ class ExistingPersonSchema(BaseSchema):
     bio = validators.String(not_empty=True)
     url = validators.URL(add_http=True, check_exists=False, not_empty=False)
     mobile = validators.String() #not_empty=True)
+    phone = validators.String()
 
 class ProposalSchema(BaseSchema):
     allow_extra_fields = False

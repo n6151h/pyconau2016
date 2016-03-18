@@ -209,7 +209,7 @@ ${ len(a.content) } B
       <label for="name" class="col-sm-2 control-label">Speakers phone</label>
       <div class="input-group col-sm-10">
       <div class="input-group">
-        <input class="form-control" id="personphone" name="people.phone" required></input>
+        <input class="form-control" id="personphone" name="person.phone" required></input>
         <span class="input-group-addon" id="basic-addon2">required</span>
         ${h.hidden('person.mobile')}
       </div>
