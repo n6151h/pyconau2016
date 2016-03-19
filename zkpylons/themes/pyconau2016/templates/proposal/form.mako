@@ -199,6 +199,7 @@ ${ len(a.content) } B
 
     <div class="row form-group"> 
       <label for="name" class="col-sm-2 control-label">Speakers name</label>
+      ${ h.hidden('person_to_edit', value=c.person.id) }
       <div class="input-group col-sm-10">
         <input class="form-control" id="name" readonly name="name" required></input>
         <span class="input-group-addon" id="basic-addon2">See user profile</span>
