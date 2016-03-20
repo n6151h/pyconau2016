@@ -134,6 +134,18 @@ class AccommodationAssistanceType(Base):
     def find_all(cls):
         return Session.query(AccommodationAssistanceType).order_by(AccommodationAssistanceType.name).all()
 
+class ProposalEventTarget(Base):
+    """Stores proposal event targets.
+       E.g. Main Conference, Miniconference, Django, IoT, &c
+    """
+    __tablename__ = 'proposal_event_target'
+
+    id = sa.Column(sa.types.Integer, primary_key=True)
+
+    # event target name
+    name = sa.Column(sa.types.String(40), unique=True, nullable=False)
+
+
 class Proposal(Base):
     """Stores both account login details and personal information.
     """
