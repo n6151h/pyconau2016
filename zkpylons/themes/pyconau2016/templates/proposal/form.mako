@@ -35,7 +35,7 @@
       <div class="textarea">
         <label for="proposalabstract" class="col-sm-2 control-label">Public Abstract</label>
         <div class="input-group col-sm-10">
-            <textarea class="form-control" id="proposalabstract" placeholder="This will appear in the conference programme. You will have an opportunity to update it once the proposal is accepted, but it should reasonably reflect what you will be presenting, and in any case it will appear as-is on the website in the draft programme. Up to about 500 words." name="proposal.abstract" rows="10" cols="80" required></textarea>
+            <textarea class="form-control" id="proposalabstract" placeholder="This will appear in the conference programme. You will have an opportunity to update it once the proposal is accepted, but it should reasonably reflect what you will be presenting, and in any case it will appear as-is on the website in the draft programme. Up to about 300 words." name="proposal.abstract" rows="10" cols="80" required></textarea>
             <span class="input-group-addon" id="basic-addon2">required</span>
         </div>
       </div>
@@ -45,7 +45,17 @@
       <div class="textarea">
         <label for="proposalpriveate_abstract" class="col-sm-2 control-label">Private Abstract</label>
         <div class="input-group col-sm-10">
-            <textarea class="form-control" id="proposalprivate_abstract" placeholder="This will only be shown to organisers and reviewers. You should provide any details about your proposal that you don't want to be public here." name="proposal.private_abstract" rows="10" cols="80" required></textarea>
+            <textarea class="form-control" id="proposalprivate_abstract" placeholder="This will only be shown to organisers and reviewers. You should provide any details about your proposal that you don't want to be public here.
+
+Please fill out an approximate timeline for the content of your presentation to help the programme committee understand the details of your proposal. You are welcome to use a non-standard talk structure instead, however many authors will find this basic template helpful.
+
+0-5 minutes: content
+5-10 minutes: content 
+10 - 15 minutes: content
+15 - 20 minutes: content and/or questions
+20 -25 minutes: content and/or questions
+
+" name="proposal.private_abstract" rows="10" cols="80" required></textarea>
             <span class="input-group-addon" id="basic-addon2">required</span>
         </div>
       </div>
@@ -266,4 +276,4 @@ ${ len(a.content) } B
 
     <hr />
 
-    <p>We reserve the right to forward proposals (accepted or not) to the miniconf organisers for possible inclusion in the miniconf programme.</p>
+    <p>The special events are a part of the call for papers. The programme committee and special event organisers reserve the right to include submissions in any of the events selected by the author to best support the conference.</p>
