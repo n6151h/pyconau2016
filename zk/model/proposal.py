@@ -199,7 +199,7 @@ class Proposal(Base):
     attachments = sa.orm.relation(Attachment, cascade='all, delete-orphan')
     reviews = sa.orm.relation(Review, backref='proposal', cascade='all, delete-orphan')
     # event targets
-    event_targets = sa.Column(JSON, default=[])
+    event_targets = sa.Column(JSON, default='')
 
     def __init__(self, **kwargs):
         # remove the args that should never be set via creation
