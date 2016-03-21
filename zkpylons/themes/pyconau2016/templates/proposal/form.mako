@@ -94,9 +94,9 @@ Please fill out an approximate timeline for the content of your presentation to 
 	    <label>
 	      <% print "XXX:", unicode(pet.id), c.proposal.event_targets, unicode(pet.id) in c.proposal.event_targets %>
               % if unicode(pet.id) in c.proposal.event_targets:
-              <input type="checkbox" name="proposal.event_target" id="proposal_event_target_${pet.id}" checked="checked"/> 
+              <input type="checkbox" name="proposal.event_targets[]" id="proposal_event_target_${pet.id}" checked> 
 	      % else:
-              <input type="checkbox" name="proposal.event_target" id="proposal_event_target_${pet.id}" />
+              <input type="checkbox" name="proposal.event_targets[]" id="proposal_event_target_${pet.id}" >
 	      % endif
               ${pet.name} 
             </label>
