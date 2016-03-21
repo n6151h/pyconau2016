@@ -148,6 +148,10 @@ class ProposalEventTarget(Base):
     # event target name
     name = sa.Column(sa.types.String(40), unique=True, nullable=False)
 
+    @classmethod
+    def find_all(cls):
+        return Session.query(ProposalEventTarget).order_by(ProposalEventTarget.id).all()
+
 
 class Proposal(Base):
     """Stores both account login details and personal information.

@@ -40,7 +40,7 @@ from password_reset_confirmation import PasswordResetConfirmation
 
 from social_network import SocialNetwork
 
-from proposal import Proposal, ProposalStatus, ProposalType, TravelAssistanceType, AccommodationAssistanceType, TargetAudience
+from proposal import Proposal, ProposalStatus, ProposalType, TravelAssistanceType, AccommodationAssistanceType, TargetAudience, ProposalEventTarget
 from attachment import Attachment
 from review import Review, Stream
 from travel import Travel

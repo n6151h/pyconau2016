@@ -18,7 +18,7 @@ from authkit.permissions import ValidAuthKitUser
 from zkpylons.lib.mail import email
 
 from zkpylons.model import meta
-from zkpylons.model import Proposal, ProposalType, ProposalStatus, TargetAudience, Attachment, Stream, Review, Role, AccommodationAssistanceType, TravelAssistanceType, Person
+from zkpylons.model import Proposal, ProposalType, ProposalStatus, TargetAudience, Attachment, Stream, Review, Role, AccommodationAssistanceType, TravelAssistanceType, Person, ProposalEventTarget
 from zkpylons.model.config import Config
 
 from zkpylons.lib.validators import ReviewSchema
@@ -91,6 +91,8 @@ class ProposalController(BaseController):
         c.target_audiences = TargetAudience.find_all()
         c.accommodation_assistance_types = AccommodationAssistanceType.find_all()
         c.travel_assistance_types = TravelAssistanceType.find_all()
+        c.proposal_event_targets = ProposalEventTarget.find_all()
+        log.debug("event target lis: %s", c.proposal_event_targets)
 
     @dispatch_on(POST="_new")
     def new(self):
@@ -292,6 +294,8 @@ class ProposalController(BaseController):
 
         defaults['person_to_edit'] = c.person.id
         defaults['name'] = c.person.fullname
+        defaults['proposal.event_targets'] = map(int, c.proposal.event_targets)
+        log.debug("EventTargets: {}".format(defaults['proposal.event_targets']))
         c.miniconf = (c.proposal.type.name == 'Miniconf')
         form = render('/proposal/edit.mako')
         return htmlfill.render(form, defaults)
