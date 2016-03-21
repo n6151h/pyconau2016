@@ -9,9 +9,12 @@ from meta import Session
 
 from person import Person
 from person_proposal_map import person_proposal_map
+from proposal_event_target_map import proposal_event_target_map
 from attachment import Attachment
 from review import Review
 from stream import Stream
+
+from sqlalchemy.dialects.postgresql import JSON
 
 class ProposalStatus(Base):
     """Stores both account login details and personal information.
@@ -195,7 +198,8 @@ class Proposal(Base):
     people = sa.orm.relation(Person, secondary=person_proposal_map, backref='proposals')
     attachments = sa.orm.relation(Attachment, cascade='all, delete-orphan')
     reviews = sa.orm.relation(Review, backref='proposal', cascade='all, delete-orphan')
-
+    # event targets
+    event_targets = sa.Column(JSON, default=[])
 
     def __init__(self, **kwargs):
         # remove the args that should never be set via creation
