@@ -92,7 +92,7 @@ class ProposalController(BaseController):
         c.accommodation_assistance_types = AccommodationAssistanceType.find_all()
         c.travel_assistance_types = TravelAssistanceType.find_all()
         c.proposal_event_targets = ProposalEventTarget.find_all()
-        log.debug("event target lis: %s", c.proposal_event_targets)
+        log.debug("event target list: %s", c.proposal_event_targets)
 
     @dispatch_on(POST="_new")
     def new(self):
@@ -119,6 +119,9 @@ class ProposalController(BaseController):
         }
         defaults['person_to_edit'] = c.person.id
         defaults['name'] = c.person.fullname
+        defaults['proposal.event_targets'] = [et.id for et in ProposalEventTarget.find_all()]
+        log.debug("new eventtar: {}".format(defaults['proposal.event_targets']))
+
         form = render("proposal/new.mako")
         return htmlfill.render(form, defaults)
 
