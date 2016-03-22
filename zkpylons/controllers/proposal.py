@@ -50,6 +50,7 @@ class ProposalSchema(BaseSchema):
     abstract_video_url = validators.URL(add_http=True, check_exists=False, not_empty=False)
     video_release = validators.Bool()
     slides_release = validators.Bool()
+    event_targets = validators.Set()
 
 class NewProposalSchema(BaseSchema):
     person = ExistingPersonSchema()
