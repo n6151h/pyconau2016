@@ -96,7 +96,7 @@ Please fill out an approximate timeline for the content of your presentation to 
               % if c.proposal and unicode(pet.id) not in c.proposal.event_targets:
               <input type="checkbox" name="proposal.event_targets" id="proposal_event_target_${pet.id}" value="${pet.id}"/>
 	      % else:
-              <input type="checkbox" name="proposal.event_targets" id="proposal_event_target_${pet.id}" value="${pet.id}" checked="checked" checked/> 
+              <input type="checkbox" name="proposal.event_targets" id="proposal_event_target_${pet.id}" value="${pet.id}"  checked/> 
 	      % endif
               ${pet.name} 
             </label>
