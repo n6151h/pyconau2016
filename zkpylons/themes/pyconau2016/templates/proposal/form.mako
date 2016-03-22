@@ -86,16 +86,17 @@ Please fill out an approximate timeline for the content of your presentation to 
 
       <div class="row form-group">
 	<label for="eventtargets" class="col-sm-2 control-label">Event Targets</label>
-	<div class="col-sm-10">
+	<div class="col-sm-10" >
 	  <div class="input-group">
 	  <!-- event targets should go here -->
 	  % for pet in c.proposal_event_targets:
           <div class="checkbox">
 	    <label>
+	      <% if c.proposal: print "EVENT TARGETS:", c.proposal.event_targets, str(pet.id) in c.proposal.event_targets %>
               % if c.proposal and unicode(pet.id) not in c.proposal.event_targets:
-              <input type="checkbox" name="proposal.event_targets[]" id="proposal_event_target_${pet.id}">
+              <input type="checkbox" name="proposal.event_targets_${pet.id}" id="proposal_event_target_${pet.id}" />
 	      % else:
-              <input type="checkbox" name="proposal.event_targets[]" id="proposal_event_target_${pet.id}" checked> 
+              <input type="checkbox" name="proposal.event_targets_${pet.id}" id="proposal_event_target_${pet.id}" checked="checked" checked/> 
 	      % endif
               ${pet.name} 
             </label>
