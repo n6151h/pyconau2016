@@ -1,4 +1,5 @@
 <%page args="editing" />
+ <div class="container-fluid">
     <div class="row form-group">
       <label for="proposaltitle" class="col-sm-2 control-label">Title</label>
       <div class="input-group">
@@ -90,7 +91,7 @@ Please fill out an approximate timeline for the content of your presentation to 
 	  <div class="input-group">
 	  <!-- event targets should go here -->
 	  % for pet in c.proposal_event_targets:
-          <div class="checkbox">
+           <div class="checkbox">
 	    <label>
               % if c.proposal and unicode(pet.id) not in c.proposal.event_targets:
               <input type="checkbox" name="proposal.event_targets" id="proposal_event_target_${pet.id}" value="${pet.id}"/>
@@ -99,8 +100,9 @@ Please fill out an approximate timeline for the content of your presentation to 
 	      % endif
               ${pet.name} 
             </label>
-	  </div>
+	   </div>
 	  % endfor
+          </div>
         </div>
       </div>
 
@@ -165,67 +167,23 @@ ${ len(a.content) } B
       </div>
     </div>
 
-<!-- Travel assistance -->
-% if c.config.get('cfp_hide_assistance_options') is 'no':
-    <h2>Travel &amp; Accommodation Assistance</h2>
-    <p class="lead">linux.conf.au has some funds available to provide travel and accommodation for selected speakers, both from the local region and internationally.</p>
+    <div class="row">
+      <h2>Financial Assistance</h2>
+      <p>Speakers will be required to register for the conference,
+but will be offered the Early Bird registration rate. We request that speakers pay for full registration if they are able.</p>
 
-    <p class="lead">Please note that <b>free admission</b> to the full conference is awarded to all primary speakers.</p>
-
-    <div class="row form-group">
-    <label for="proposal.travel_assistance" class="col-sm-2 control-label">Travel Assistance</label>
-<% onclick = "document.getElementById('travelwarning').style.display = 'none';" %>
-    <div class="radio col-sm-10">
-% for ta in c.travel_assistance_types:
-      <div class="input-group radio">
-      <label>
-% if ta.id == 1:
-        <input type="radio" name="proposal.travel_assistance" id="proposal.travel_assistance_${ ta.id }" onclick = "document.getElementById('travelwarning').style.display = 'none';" value="1" checked="checked">
-% else:
-        <input type="radio" name="proposal.travel_assistance" id="proposal.travel_assistance_${ ta.id }" value="${ ta.id }" onclick = "document.getElementById('travelwarning').style.display = '';">
-% endif
-        ${ ta.name }
-      </label>
-      </div>
-% endfor
+      <p>Financial assistance <em>may</em> be available in circumstances where necessary.
+ To find out more please e-mail <em>${ c.config.get('contact_email') }</em>.</p>
     </div>
-    <div id="travelwarning" class="alert alert-info" role="alert" style="display: none"><p class="warningbox" >WARNING: We have a limited travel budget and requesting travel assistance <b>affects     your chances of acceptance</b>.</p></div>
-    </div>
-
-    <div class="row form-group">
-    <label for="proposal.accommodation_assistance" class="col-sm-2 control-label">Accommodation Assistance</label>
-% for aa in c.accommodation_assistance_types:
-    <div class="radio col-sm-10">
-      <label>
-% if aa.id == 1:
-        <input type="radio" name="proposal.accommodation_assistance" id="proposal.accommodation_assistance_${ aa.id }" value="1" checked="checked">
-% else:
-        <input type="radio" name="proposal.accommodation_assistance" id="proposal.accommodation_assistance_${ aa.id }" value="${ aa.id }" >
-% endif
-        ${ aa.name }
-      </label>
-    </div>
-% endfor
-    </div>
-
-% else:
-    ${ h.hidden('proposal.travel_assistance') }
-    ${ h.hidden('proposal.accommodation_assistance') }
-% endif
-
-% if c.config.get('cfp_hide_assistance_options') is 'by_email': 
-    <h3>Travel &amp; Accommodation Assistance</h3>
-    <p class="lead" >Please note that <b>free admission</b> to the full conference is offered to all speakers.</p>
-    <p class="lead" >Travel &amp; accommodation assistance <em>may</em> be available in circumstances where it is absolutely necessary. To find out more please e-mail <em>${ c.config.get['contact_email'] }</em>.</p>
-% endif
-<!-- / Travel assistance -->
 
 <!-- About the speaker -->
-    <h2>About yourself</h2>
+    <div class="row">
+      <h2>About yourself</h2>
 
-    <p class="lead"><em>Note: These settings are common for all your proposals: presentations and tutorials.</em></p>
+      <p><em>Note: These settings are common for all your proposals: presentations and tutorials.</em></p>
 
-    <p class="lead">If two or more people are presenting together, this information should for the primary speaker; mention the other speakers in the Abstract, eg. "(with Bob Vaxhacker and Eve Duo)".</p>
+      <p>If two or more people are presenting together, this information should for the primary speaker; mention the other speakers in the Abstract, eg. "(with Bob Vaxhacker and Eve Duo)".</p>
+    </div>
 
     <div class="row form-group"> 
       <label for="name" class="col-sm-2 control-label">Speakers name</label>
@@ -296,4 +254,6 @@ ${ len(a.content) } B
 
     <hr />
 
-    <p>The special events are a part of the call for papers. The programme committee and special event organisers reserve the right to include submissions in any of the events selected by the author to best support the conference.</p>
+    <p>The special events are a part of the call for proposals. The programme committee and special event organisers reserve the right to include submissions in any of the events selected by the author to best support the conference.</p>
+
+  </div>
