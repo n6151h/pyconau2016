@@ -40,7 +40,8 @@ from zkpylons.config.zkpylons_config import get_path
 
 from sqlalchemy.orm.util import object_mapper
 
-import itertools, re, Image
+import itertools, re
+from PIL import Image
 from glob import glob
 
 from pylons.controllers.util import redirect

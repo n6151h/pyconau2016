@@ -4,7 +4,7 @@ alembic>=0.4.2
 venusian
 pydns
 lxml
-PIL
+Pillow
 psycopg2
 pyramid
 pyramid_debugtoolbar
