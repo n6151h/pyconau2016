@@ -41,8 +41,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="/css/simple-sidebar.css" rel="stylesheet">
 
     <link href="/css/pyconau.css" rel="stylesheet">
 
@@ -68,35 +66,24 @@
               </button>
               <a class="navbar-brand" href="#">${ c.config.get('event_name') }</a>
             </div>
-	    <%include file="nav.mako" />
+	    <%include file="nav.mako" args="parent=self" />
           </div>
         </nav>
       </div>
     </div>
 
-
-  <div id="wrapper"><!-- Main wrapper for the sidebar -->
-    <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <div id="background-image-disabled"></div>
-            <ul class="sidebar-nav">
-                <%include file="/leftcol/toolbox.mako" args="parent=self" />
-            </ul>
-        </div>
-    <!-- /#sidebar-wrapper -->
-
-    <div id="page-content-wrapper" class="toggled">
-      <a href="#menu-toggle" class="btn btn-default btn-xs" id="menu-toggle" style="margin-left: -13px;">Toggle Menu</a>
-
-      <div class="container-fluid">
-        <div class="row featurette">
-          <%include file="/flash.mako" />
-          ${next.body()}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div id="wrapper">
+            <%include file="/flash.mako" />
+            ${next.body()}
+          </div>
         </div>
       </div>
-
-    </div><!-- /.container page-content-wrapping-->
-  </div><!--/.container wrapper -->
+    </div>
+  </div>
 
 
     <!-- Bootstrap core JavaScript
