@@ -93,7 +93,7 @@
 
 ## Toolbox links
 % if h.signed_in_person():
-    <li class="sidebar-brand">${ h.signed_in_person().firstname }'s Profile</li>
+    <li class="nav-head">${ h.signed_in_person().firstname }'s Profile</li>
 ${ parent.toolbox_extra() }
 %   if c.config.get("cfp_status") == 'open' or h.auth.authorized(h.auth.has_late_submitter_role):
       ${ make_link('Submit a proposal', h.url_for(controller='proposal', action='new', id=None)) }
@@ -123,7 +123,7 @@ ${ parent.toolbox_extra() }
       ${ make_link('Create an account', "/person/new") }
 % endif
 % if h.auth.authorized(h.auth.has_organiser_role):
-<li class="sidebar-brand">Zookeepr Administration</li>
+<li class="nav-head">Zookeepr Administration</li>
       ${ make_link('Admin', h.url_for(controller='admin')) }
       ${ make_link('Lookup', h.url_for(controller='admin', action='lookup')) }
       ${ make_link('View People', h.url_for(controller='person')) }
@@ -137,14 +137,14 @@ ${ parent.toolbox_extra() }
 ${ parent.toolbox_extra_admin() }
 % endif
 % if h.auth.authorized(h.auth.has_reviewer_role):
-<li class="sidebar-brand">Paper Reviewer</li>
+<li class="nav-head">Propsal Reviewer</li>
 ${ parent.toolbox_extra_reviewer() }
       ${ make_link('How to review', '/help/review') }
       ${ make_link('Proposals to review', h.url_for(controller='proposal', action='review_index', id=None)) }
       ${ make_link("Reviews you've made", h.url_for(controller='review', action='index', id=None)) }
       ${ make_link('Summary of reviewed proposals', h.url_for(controller='proposal', action='summary', id=None)) }
       ${ make_link('Reviewer summary', h.url_for(controller='review', action='summary', id=None)) }
-<li class="sidebar-brand">List of proposals by:</li>
+<li class="nav-head">List of proposals by:</li>
     %if c.config.get('cfp_hide_scores') == 'no':
         ${ make_link('Certain score / count of reviewers', h.url_for(controller='admin', action='proposals_by_strong_rank', id=None)) }
         ${ make_link('max score, min score then average', h.url_for(controller='admin', action='proposals_by_max_rank', id=None)) }
@@ -154,14 +154,14 @@ ${ parent.toolbox_extra_reviewer() }
         ${ make_link('submission date', h.url_for(controller='admin', action='proposals_by_date', id=None)) }
 % endif
 % if h.auth.authorized(h.auth.has_funding_reviewer_role):
-    <li class="sidebar-brand">Funding Reviewer</li>
+    <li class="nav-head">Funding Reviewer</li>
 ${ parent.toolbox_extra_funding_reviewer() }
       ${ make_link('How to review', '/help/funding_review') }
       ${ make_link('Proposals to review', h.url_for(controller='funding', action='review_index')) }
       ${ make_link("Reviews you've made", h.url_for(controller='funding_review', action='index')) }
       ${ make_link('Summary of reviewed proposals', h.url_for(controller='funding', action='summary')) }
       ${ make_link('Reviewer summary', h.url_for(controller='funding_review', action='summary')) }
-      <li class="sidebar-brand">List of requests by:</li>
+      <li class="nav-head">List of requests by:</li>
         ${ make_link('Certain score / count of reviewers', h.url_for(controller='admin', action='funding_requests_by_strong_rank')) }
         ${ make_link('max score, min score then average', h.url_for(controller='admin', action='funding_requests_by_max_rank')) }
 % endif
