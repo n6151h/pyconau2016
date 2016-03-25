@@ -71,7 +71,7 @@ class DbContentController(BaseController):
         c.db_content = DbContent()
         defaults = h.object_to_defaults(c.db_content, 'db_content')
         if request.GET.has_key('url'):
-            defaults['db_content.type'] = find_by_name('Page', abort_404=False)
+            defaults['db_content.type'] = DbContentType.find_by_name('Page', abort_404=False)
             if request.GET['url'].startswith('/'):
                 defaults['db_content.url'] = str(request.GET['url'])[1:]
             else:
