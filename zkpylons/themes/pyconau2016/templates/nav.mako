@@ -19,7 +19,7 @@
         url = '/programme' + url
 
     mm = [
-        ('Home', '/', 'home'),
+        #('Home', '/', 'home'),
         ('About', '/about/pycon2016.au', 'about'),
 #        ('Melbourne', '/melbourne/about', 'melbourne'),
         ('Sponsors', '/sponsors/sponsors', 'sponsors'),
