@@ -2,7 +2,7 @@
 
 <%
     submenus = {
-        'about': ['Pycon Australia', 'Venue', 'History', 'Harassment'],
+        'about': ['PyCon Australia', 'Venue', 'Code of Conduct'],
         'melbourne': ['About', 'Sightseeing'],
         #'sponsors': ['Sponsors', 'Why Sponsor'],
         'programme': ['Call for Proposals'],
