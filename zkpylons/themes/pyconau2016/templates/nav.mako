@@ -21,6 +21,7 @@
     mm = [
         #('Home', '/', 'home'),
         ('About', '/about/pycon2016.au', 'about'),
+        ('News', '/media/news', 'news'),
 #        ('Melbourne', '/melbourne/about', 'melbourne'),
         ('Sponsors', '/sponsors/sponsors', 'sponsors'),
         ('Programme', '/programme/about', 'programme'),
