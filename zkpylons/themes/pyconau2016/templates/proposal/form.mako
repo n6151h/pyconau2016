@@ -50,11 +50,12 @@
 
 Please fill out an approximate timeline for the content of your presentation to help the programme committee understand the details of your proposal. You are welcome to use a non-standard talk structure instead, however many authors will find this basic template helpful.
 
-0-5 minutes: content
-5-10 minutes: content 
+0 - 5 minutes: content
+5 - 10 minutes: content 
 10 - 15 minutes: content
-15 - 20 minutes: content and/or questions
-20 -25 minutes: content and/or questions
+15 - 20 minutes: content
+20 - 25 minutes: content
+25 - 30 minutes: questions
 
 " name="proposal.private_abstract" rows="10" cols="80" required></textarea>
             <span class="input-group-addon" id="basic-addon2">required</span>
