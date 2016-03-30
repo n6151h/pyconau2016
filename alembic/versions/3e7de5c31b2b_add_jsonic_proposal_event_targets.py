@@ -15,9 +15,32 @@ import sqlalchemy as sa
 
 from sqlalchemy.dialects.postgresql import JSON
 
+data = [
+    { 'name': 'Main Conference' },
+    { 'name': 'Python in Education Seminar' },
+    { 'name': 'DjangoCon AU' },
+    { 'name': 'Science and Data Miniconference' },
+    { 'name': 'Internet of Things Miniconference' }
+]
+
 def upgrade():
-    op.add_column('proposal', sa.column('event_targets', sa.types.Text))
+    # Create the events target table.
+    event_targets = op.create_table('proposal_event_target',
+                                    sa.Column('id', sa.types.Integer, 
+                                              primary_key=True),
+                                    sa.Column('name', sa.types.String(40), 
+                                              unique=True, 
+                                              nullable=False))
 
+    # Populate it.
+    op.bulk_insert(event_targets, data)
 
+    # Add JSON column to proposal.
+    op.add_column('proposal', sa.Column('event_targets', 
+                                        sa.dialects.postgresql.JSON, nullable=True))
+     
+
+     
 def downgrade():
     op.drop_column('proposal', 'event_targets')
+    op.drop_table('proposal_event_target')
