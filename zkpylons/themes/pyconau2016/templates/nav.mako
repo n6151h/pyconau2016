@@ -2,7 +2,7 @@
 
 <%
     submenus = {
-        'about': ['PyCon Australia', 'Venue', 'Code of Conduct'],
+        'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Aid'],
         'melbourne': ['About', 'Sightseeing'],
         #'sponsors': ['Sponsors', 'Why Sponsor'],
         'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
@@ -99,21 +99,19 @@ ${ parent.toolbox_extra() }
 %   if c.config.get("cfp_status") == 'open' or h.auth.authorized(h.auth.has_late_submitter_role):
       ${ make_link('Submit a proposal', h.url_for(controller='proposal', action='new', id=None)) }
 %   endif
-%   if c.config.get("cfmini_status") == 'open':
-      ${ make_link('Submit a miniconf', h.url_for(controller='miniconf_proposal', action='new', id=None)) }
-%   endif
-%   if c.config.get("funding_status") == 'open':
-      ${ make_link('Submit a Funding Application', h.url_for(controller='funding', action='new', id=None)) }
-%   endif
+
 %   if c.config.get('conference_status') == 'open' or h.signed_in_person().registration:
       ${ make_link('Conference registration', '/register/status') }
 %   endif
+
 %   if h.signed_in_person().is_speaker():
       ${ make_link('Speakers Info', '/programme/presenter_faq') }
 %   endif
-%   if h.signed_in_person().is_miniconf_org():
-      ${ make_link('Miniconf Organiser Info', '/programme/miniconf_information') }
-%   endif
+
+## %   if h.signed_in_person().is_miniconf_org():
+##       ${ make_link('Miniconf Organiser Info', '/programme/miniconf_information') }
+## %   endif
+
 %   if len(h.signed_in_person().proposals) > 0:
       ${ make_link('My proposals', h.url_for(controller='proposal')) }
 %   endif
