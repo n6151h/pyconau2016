@@ -145,9 +145,12 @@ class ProposalController(BaseController):
         meta.Session.add(c.proposal)
 
         if not h.signed_in_person():
-            c.person = model.Person(**person_results)
-            meta.Session.add(c.person)
-            email(c.person.email_address, render('/person/new_person_email.mako'))
+            # We don't want proposals to be submitted by folks who
+            # aren't actually signed in.  So, redirect them to the
+            # sign-in page.
+            h.flash("You need to be signed in to submit a proposal!")
+            return redirect_to(controller="person", action="signin" id=None)
+
         else:
             c.person = h.signed_in_person()
             for key in person_results:

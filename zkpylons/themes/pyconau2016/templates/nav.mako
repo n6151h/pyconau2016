@@ -2,10 +2,10 @@
 
 <%
     submenus = {
-        'about': ['Pycon Australia', 'Venue', 'History', 'Harassment'],
+        'about': ['PyCon Australia', 'Venue', 'Code of Conduct'],
         'melbourne': ['About', 'Sightseeing'],
-        'sponsors': ['Sponsors', 'Why Sponsor'],
-        'programme': ['About', 'Call for Proposals'],
+        #'sponsors': ['Sponsors', 'Why Sponsor'],
+        'programme': ['Call for Proposals'],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
         'register': ['Prices', 'Terms and Conditions'],
         #'register': ['Prices', 'Funding', 'Terms and Conditions'],
@@ -19,7 +19,7 @@
         url = '/programme' + url
 
     mm = [
-        ('Home', '/', 'home'),
+        #('Home', '/', 'home'),
         ('About', '/about/pycon2016.au', 'about'),
 #        ('Melbourne', '/melbourne/about', 'melbourne'),
         ('Sponsors', '/sponsors/sponsors', 'sponsors'),
