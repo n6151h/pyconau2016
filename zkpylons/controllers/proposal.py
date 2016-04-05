@@ -43,8 +43,8 @@ class ProposalSchema(BaseSchema):
     technical_requirements = validators.String(not_empty=False)
     type = ProposalTypeValidator()
     audience = TargetAudienceValidator()
-    #accommodation_assistance = AccommodationAssistanceTypeValidator()
-    #travel_assistance = TravelAssistanceTypeValidator()
+    accommodation_assistance = AccommodationAssistanceTypeValidator()
+    travel_assistance = TravelAssistanceTypeValidator()
     project = validators.String()
     url = validators.URL(add_http=True, check_exists=False, not_empty=False)
     abstract_video_url = validators.URL(add_http=True, check_exists=False, not_empty=False)
@@ -149,7 +149,7 @@ class ProposalController(BaseController):
             # aren't actually signed in.  So, redirect them to the
             # sign-in page.
             h.flash("You need to be signed in to submit a proposal!")
-            return redirect_to(controller="person", action="signin" id=None)
+            return redirect_to(controller="person", action="signin", id=None)
 
         else:
             c.person = h.signed_in_person()

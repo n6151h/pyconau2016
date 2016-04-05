@@ -75,12 +75,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div id="wrapper">
-            <%include file="/flash.mako" />
-            ${next.body()}
-          </div>
-        </div>
+      <div class="col-md-10"><div class="wrapper">
+        <%include file="/flash.mako" />
+        ${next.body()}
+      </div></div>
+      <div class="col-md-1 wrapper text-center">
+        <h4>Sponsors</h4>
+        <br><b>Platinum</b>
+        <br><img class="img-responsive center-block" title="Centric Web Estate" src="/img/logos/cwe.png">
+        <br><img class="img-responsive center-block" title="Iress" src="/img/logos/iress.png">
+        <br><b>Gold</b>
+        <br><img class="img-responsive center-block" title="Google" src="/img/logos/google.png">
+        <br><img class="img-responsive center-block" title="Optiver" src="/img/logos/optiver.png">
       </div>
     </div>
   </div>
