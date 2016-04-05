@@ -82,7 +82,7 @@
       <div class="col-md-1 wrapper text-center">
         <h4>Sponsors</h4>
         <br><b>Platinum</b>
-        <br><img class="img-responsive center-block" title="Centric Web Estate" src="/img/logos/cwe.png">
+        <br><img class="img-responsive center-block" title="Centric Web Estate" src="/img/logos/dev-demand.png">
         <br><img class="img-responsive center-block" title="Iress" src="/img/logos/iress.png">
         <br><b>Gold</b>
         <br><img class="img-responsive center-block" title="Google" src="/img/logos/google.png">
