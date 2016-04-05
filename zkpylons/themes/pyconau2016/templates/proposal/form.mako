@@ -50,11 +50,12 @@
 
 Please fill out an approximate timeline for the content of your presentation to help the programme committee understand the details of your proposal. You are welcome to use a non-standard talk structure instead, however many authors will find this basic template helpful.
 
-0-5 minutes: content
-5-10 minutes: content 
+0 - 5 minutes: content
+5 - 10 minutes: content 
 10 - 15 minutes: content
-15 - 20 minutes: content and/or questions
-20 -25 minutes: content and/or questions
+15 - 20 minutes: content
+20 - 25 minutes: content
+25 - 30 minutes0 questions
 
 " name="proposal.private_abstract" rows="10" cols="80" required></textarea>
             <span class="input-group-addon" id="basic-addon2">required</span>
@@ -196,11 +197,13 @@ but will be offered the Early Bird registration rate. We request that speakers p
 
     <div class="row form-group"> 
       <label for="name" class="col-sm-2 control-label">Speakers phone</label>
-      <div class="input-group col-sm-10">
+      <div class="input-group col-sm-10u">
       <div class="input-group">
         <input class="form-control" id="personphone" name="person.phone" required></input>
         <span class="input-group-addon" id="basic-addon2">required</span>
         ${h.hidden('person.mobile')}
+        ${h.hidden('proposal.travel_assistance', value="-1")}
+        ${h.hidden('proposal.accommodation_assistance', value="-1")}
       </div>
       <p class="help-block">The conference team will need this to contact you during the conference week. If you don't have one, or do not wish to provide it, then enter NONE in this field</p>
       </div>

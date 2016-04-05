@@ -81,6 +81,8 @@ class TravelAssistanceType(Base):
 
     @classmethod
     def find_by_id(cls, id):
+        if id is None:
+            return -1
         return Session.query(TravelAssistanceType).filter_by(id=id).first()
 
     @classmethod
@@ -127,6 +129,8 @@ class AccommodationAssistanceType(Base):
 
     @classmethod
     def find_by_id(cls, id):
+        if id is None:
+            return -1
         return Session.query(AccommodationAssistanceType).filter_by(id=id).first()
 
     @classmethod

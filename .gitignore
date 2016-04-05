@@ -16,3 +16,6 @@ zkpylons/public/photocomp
 /GTAGS
 /ID
 development.ini
+development.log
+development.pid
+production.ini
