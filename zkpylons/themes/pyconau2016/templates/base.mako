@@ -54,7 +54,7 @@
 ================================================== -->
   <body>
     <div class="navbar-wrapper">
-      <div class="container">
+      <div class="container-fluid">
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
