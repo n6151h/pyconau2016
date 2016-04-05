@@ -2,11 +2,11 @@
 
 <%
     submenus = {
-        'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Aid'],
+        'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Assistance'],
         'melbourne': ['About', 'Sightseeing'],
         #'sponsors': ['Sponsors', 'Why Sponsor'],
-        'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
-        #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
+        #'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
+        'programme': ['DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
         'register': ['Prices', 'Terms and Conditions'],
         #'register': ['Prices', 'Funding', 'Terms and Conditions'],
         'media': ['News','In the press','Graphics']
