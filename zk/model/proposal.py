@@ -52,6 +52,7 @@ class ProposalType(Base):
     # title of proposal
     name = sa.Column(sa.types.String(40), unique=True, nullable=False)
     notify_email = sa.Column(sa.types.Text, nullable=True)
+    rank = sa.Column(sa.types.Integer, nullable=False, default=0)
 
     def __init__(self, **kwargs):
         # remove the args that should never be set via creation
@@ -67,7 +68,7 @@ class ProposalType(Base):
 
     @classmethod
     def find_all(cls):
-        return Session.query(ProposalType).order_by(ProposalType.name).all()
+        return Session.query(ProposalType).order_by(ProposalType.rank).all()
 
 class TravelAssistanceType(Base):
     __tablename__ = 'travel_assistance_type'
