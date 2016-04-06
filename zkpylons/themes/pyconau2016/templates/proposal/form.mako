@@ -35,9 +35,12 @@
     <div class="row form-group"> 
       <div class="textarea">
         <label for="proposalabstract" class="col-sm-2 control-label">Public Abstract</label>
-        <div class="input-group col-sm-10">
-            <textarea class="form-control" id="proposalabstract" placeholder="This will appear in the conference programme. You will have an opportunity to update it once the proposal is accepted, but it should reasonably reflect what you will be presenting, and in any case it will appear as-is on the website in the draft programme. Up to about 300 words." name="proposal.abstract" rows="10" cols="80" required></textarea>
-            <span class="input-group-addon" id="basic-addon2">required</span>
+        <div class="col-sm-10">This will appear in the conference programme. You will have an opportunity to update it once the proposal is accepted, but it should reasonably reflect what you will be presenting, and in any case it will appear as-is on the website in the draft programme. Up to about 300 words.</P>
+          <p>
+          <div class="input-group">
+              <textarea class="form-control" id="proposalabstract" placeholder="public abstract" name="proposal.abstract" rows="10" cols="80" required></textarea>
+              <span class="input-group-addon" id="basic-addon2">required</span>
+          </div>
         </div>
       </div>
     </div>
@@ -45,20 +48,22 @@
     <div class="row form-group"> 
       <div class="textarea">
         <label for="proposalpriveate_abstract" class="col-sm-2 control-label">Private Abstract</label>
-        <div class="input-group col-sm-10">
-            <textarea class="form-control" id="proposalprivate_abstract" placeholder="This will only be shown to organisers and reviewers. You should provide any details about your proposal that you don't want to be public here.
-
-Please fill out an approximate timeline for the content of your presentation to help the programme committee understand the details of your proposal. You are welcome to use a non-standard talk structure instead, however many authors will find this basic template helpful.
-
-0 - 5 minutes: content
-5 - 10 minutes: content 
-10 - 15 minutes: content
-15 - 20 minutes: content
-20 - 25 minutes: content
-25 - 30 minutes: questions
-
-" name="proposal.private_abstract" rows="10" cols="80" required></textarea>
+        <div class="col-sm-10">
+          <p>This will only be shown to organisers and reviewers. You should provide any details about your proposal that you don't want to be public here.</p>
+          <p>Please fill out an approximate timeline for the content of your presentation to help the programme committee understand the details of your proposal. 
+             You are welcome to use a non-standard talk structure instead, however many authors will find this basic template helpful:</p>
+          <ul style="none">
+            <li>0 - 5 minutes: content
+ 	    <li>5 - 10 minutes: content 
+	    <li>10 - 15 minutes: content
+	    <li>15 - 20 minutes: content
+	    <li>20 - 25 minutes: content
+	    <li>25 - 30 minutes: questions
+          </ul>  
+          <div class="input-group">
+            <textarea class="form-control" id="proposalprivate_abstract" placeholder="private abstract" name="proposal.private_abstract" rows="10" cols="80" required></textarea>
             <span class="input-group-addon" id="basic-addon2">required</span>
+          </div>
         </div>
       </div>
     </div>
@@ -66,8 +71,11 @@ Please fill out an approximate timeline for the content of your presentation to 
     <div class="row form-group"> 
       <div class="textarea">
         <label for="proposaltechnical_requirements" class="col-sm-2 control-label">Technical Requirements</label>
-        <div class="input-group col-sm-10">
-            <textarea class="form-control" id="proposalprivate_requirements" placeholder="Speakers will be provided with: Internet access, power, projector, audio.  If you require anything in addition, please list your technical requirements here.  Such as: a static IP address, A/V equipment or will be demonstrating security-related techniques on the conference network." name="proposal.technical_requirements" rows="10" cols="80"></textarea>
+        <div class="col-sm-10">
+          <p>Speakers will be provided with: Internet access, power, projector, audio.  If you require anything in addition, please list your technical requirements here.  Such as: a static IP address, A/V equipment or will be demonstrating security-related techniques on the conference network.</p>
+          <div class="input-group">
+              <textarea class="form-control" id="proposalprivate_requirements" placeholder="technical requirements" name="proposal.technical_requirements" rows="10" cols="80"></textarea>
+          </div>
         </div>
       </div>
     </div>
