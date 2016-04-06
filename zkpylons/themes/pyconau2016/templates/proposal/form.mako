@@ -181,8 +181,7 @@ ${ len(a.content) } B
       <p>Speakers will be required to register for the conference,
 but will be offered the Early Bird registration rate. We request that speakers pay for full registration if they are able.</p>
 
-      <p>Financial assistance <em>may</em> be available in circumstances where necessary.
- To find out more please e-mail <em>${ c.config.get('contact_email') }</em>.</p>
+      <p><a href="${ h.url_for("/about/financial_assistance") }">Financial Assistance</a> <em>may</em> be available in circumstances where necessary.
     </div>
 
 <!-- About the speaker -->
