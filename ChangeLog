@@ -1,0 +1,34 @@
+CHANGES
+=======
+
+* Removed sample .ini files. Fixed production.ini
+* Accomodation and travel assistance elements removed from CFP page(s
+* Clicking on "Add page here" in Account pull-down was throwing exception.  Fixed
+* Added view*.mako from "base" level templates into pyconau2016 theme in order to include Event Targets section in the view
+* Writing for Richard Jones ..
+* more better
+* move menu to top bar
+* basic fixes, ugh
+* Removed debug cruft from template
+* The checked issue seems to have disappeared now that I've added event_targets to the validation schema
+* Event target selection checkboxes now working. Will let Tennessee et alia test before merging into master
+* Figured out why pre-checked input tags weren't showing as checked. In chrome (at least) you need to specify both checked="checked" and just checked. E.g. <input type="checkbox" check="checked" checked>
+* Event targets now on new and edit CFP forms
+* Still trying to get input check set
+* Using class "checkbox". Can't figure out why it won't set these as checked already. (i.e. the CHECKED parameter to <input type="checkbox" isn't working)
+* Added event targets to proposal (edit) form
+* Can't seem to get alembic to add a JSON column. So, did this by hand using psql. Now have framework in place to do the event target checkbox set in CFP
+* Checkpoint
+* Added emacs scratch files to .gitignore
+* On further consideration, going to go with making event_targets a JSON property in Proposal and ditch the proposal_event_target_map
+* Added ProposalEventTarget model and supporting tables for many-to-many relation between these and Proposal
+* Changes as requessted by Tennessee Leeuwenburg in his email of 20/3/2016
+* pass along the person_to_edit field, hidden, as we don't want anyone to actually edit it
+* don't validate attachments when editing proposals, that's a separate screen
+* Makes the person url be committed to the db
+* Getting CFP stuff to work. Can create a new proposal. Can see it in prooposals list, and email is sent to me (creator.) Can edit it, but, cannot submit edits. Flash msgs say fields are missing. SSDD
+* Many changes by Richard Jones to make the site look and feel as it should
+* Got mcec background in. Figured out how to do carousel stuff
+* Site is mostly running now. Numerous things broke when they introduced categories in config other than 'general'. Dereferences were all (or nearly all) still using default ('general"). config items like 'personal_info' are now 'rego', requiring an additional keyword arg in c.config.get. Eg: c.config.get('personal_info', category='rego')
+* Copied over a number of "missing" files from the 2016 tree. These appear to either have been omitted from the git repo this was built from, or are now needed in the current zk baseline
+* Initial commit

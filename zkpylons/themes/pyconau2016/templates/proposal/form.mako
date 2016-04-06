@@ -55,7 +55,7 @@ Please fill out an approximate timeline for the content of your presentation to 
 10 - 15 minutes: content
 15 - 20 minutes: content
 20 - 25 minutes: content
-25 - 30 minutes0 questions
+25 - 30 minutes: questions
 
 " name="proposal.private_abstract" rows="10" cols="80" required></textarea>
             <span class="input-group-addon" id="basic-addon2">required</span>
