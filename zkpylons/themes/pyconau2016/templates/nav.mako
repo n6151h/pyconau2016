@@ -7,7 +7,7 @@
         #'sponsors': ['Sponsors', 'Why Sponsor'],
         'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
-        'register': ['Prices', 'Terms and Conditions'],
+        'register': ['Status', 'Prices', 'Terms and Conditions'],
         #'register': ['Prices', 'Funding', 'Terms and Conditions'],
         'media': ['News','In the press','Graphics']
     }
@@ -18,14 +18,19 @@
     if url.startswith('/schedule'):
         url = '/programme' + url
 
+    if c.config.get('conference_status') == 'open' or h.signed_in_person().registration:
+      mm_register = [('Register', '/register/prices', 'register')]
+    else:
+      mm_register = []
+
     mm = [
         #('Home', '/', 'home'),
         ('About', '/about/pycon2016.au', 'about'),
         ('News', '/media/news', 'news'),
 #        ('Melbourne', '/melbourne/about', 'melbourne'),
         ('Sponsors', '/sponsors/sponsors', 'sponsors'),
-        ('Programme', '/programme/about', 'programme'),
-#        ('Register', '/register/prices', 'register'),
+        ('Programme', '/programme/about', 'programme')
+	] + mm_register + [
 #        ('Media', '/media/news', 'media'),
         ('Contact', '/contact', 'contact'),
 #        ('Wiki', '/wiki', 'wiki'),
