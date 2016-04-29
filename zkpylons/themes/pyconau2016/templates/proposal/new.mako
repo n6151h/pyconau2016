@@ -19,5 +19,5 @@ ${ h.end_form() }
   return "Submit a Proposal"
 %></%def>
 <%def name="title()" >
-Submit a Paper - ${ parent.title() }
+Submit a Proposal - ${ parent.title() }
 </%def>

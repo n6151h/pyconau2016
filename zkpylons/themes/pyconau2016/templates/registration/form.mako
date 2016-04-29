@@ -27,7 +27,7 @@ import array
 
           <p class="note"><span class="mandatory">*</span> - Mandatory field</p>
 
-          <p class="label">
+          <p>
             <b>Name:</b>
 % if c.registration and c.registration.person:
           ${ c.registration.person.firstname }
@@ -40,7 +40,7 @@ import array
           ${ c.signed_in_person.lastname }
 % endif
           </p>
-          <p class="label">
+          <p>
             <b>Email address:</b>
 % if c.registration and c.registration.person:
           ${ c.registration.person.email_address }
@@ -50,20 +50,20 @@ import array
           </p>
 
 %if c.config.get('personal_info', category='rego')['home_address'] == 'yes':
-          <p class="label"><span class="mandatory">*</span><label for="person.address">Address:</label></p>
+          <p><span class="mandatory">*</span><label for="person.address">Address:</label></p>
           <p class="entries">
             ${ h.text('person.address1', size=40) }
             <br>
             ${ h.text('person.address2', size=40) }
           </p>
 
-          <p class="label"><span class="mandatory">*</span><label for="person.city">City/Suburb:</label></p>
+          <p><span class="mandatory">*</span><label for="person.city">City/Suburb:</label></p>
           <p class="entries">${ h.text('person.city', size=40) }</p>
 
-          <p class="label"><label for="person.state">State/Province:</label></p>
+          <p><label for="person.state">State/Province:</label></p>
           <p class="entries">${ h.text('person.state', size=40) }</p>
 
-          <p class="label"><span class="mandatory">*</span><label for="person.postcode">Postcode/ZIP:</label></p>
+          <p><span class="mandatory">*</span><label for="person.postcode">Postcode/ZIP:</label></p>
           <p class="entries">${ h.text('person.postcode', size=40) }</p>
 %else:
 ${ h.hidden('person.address1') }
@@ -73,7 +73,7 @@ ${ h.hidden('person.state') }
 ${ h.hidden('person.postcode') }
 %endif
 
-          <p class="label"><span class="mandatory">*</span><label for="person.country">Country:</label></p>
+          <p><span class="mandatory">*</span><label for="person.country">Country:</label></p>
           <p class="entries">
             <select name="person.country">
 % for country in h.countries():
@@ -87,10 +87,10 @@ ${ h.hidden('person.postcode') }
 %>
 
 %if c.config.get('personal_info', category='rego')['phone'] == 'yes':
-          <p class="label"><label for="person.mobile">Phone number (International Format):</label></p>
+          <p><label for="person.mobile">Phone number (International Format):</label></p>
           <p class="entries">${ h.text('person.phone') }</p>
 
-          <p class="label">
+          <p>
 % if is_speaker:
             <span class="mandatory">*</span>
 % endif
@@ -102,7 +102,7 @@ ${ h.hidden('person.phone') }
 ${ h.hidden('person.mobile') }
 %endif
 
-          <p class="label"><label for="person.company">Company:</label></p>
+          <p><label for="person.company">Company:</label></p>
           <p class="entries">${ h.text('person.company', size=60) }</p>
 
         </fieldset>
@@ -110,7 +110,7 @@ ${ h.hidden('person.mobile') }
         <fieldset id="voucher">
           <h2>Voucher</h2>
 
-          <p class="label"><label for="registration.voucher_code">Voucher code:</label></p>
+          <p><label for="registration.voucher_code">Voucher code:</label></p>
           <p class="entries">${ h.text('registration.voucher_code', size=15) }</p>
           <p class="note">If you have been provided with a voucher code, please enter it here.</p>
 
@@ -392,13 +392,13 @@ accommdisplay();
 
 %         endif
 %       elif category.name == "Partners' Programme":
-          <p class="label"><span class="mandatory">#</span><label for="registration.partner_name">Your partner's name:</label></p>
+          <p><span class="mandatory">#</span><label for="registration.partner_name">Your partner's name:</label></p>
           <p class="entries">${ h.text('products.partner_name', size=50) }</p>
           <p class="note">#If your partner will be participating in the programme, then this field is required so that our Partners Programme manager can contact them.</p>
-          <p class="label"><span class="mandatory">#</span><label for="registration.partner_email">Your partner's email address:</label></p>
+          <p><span class="mandatory">#</span><label for="registration.partner_email">Your partner's email address:</label></p>
           <p class="entries">${ h.text('products.partner_email', size=50) }</p>
           <p class="note">#If your partner will be participating in the programme, then this field is required so that our Partners Programme manager can contact them.</p>
-          <p class="label"><span class="mandatory">#</span><label for="registration.partner_mobile">enter number in international format. If you don't know the number, type "unknown".:</label></p>
+          <p><span class="mandatory">#</span><label for="registration.partner_mobile">enter number in international format. If you don't know the number, type "unknown".:</label></p>
           <p class="entries">${ h.text('products.partner_mobile', size=50) }</p>
           <p class="note">A Partners Programme style is included with every adult partner ticket. Please indicate the appropriate number and sizes in the T-Shirt Section (above).</p>
 %       endif
@@ -412,26 +412,26 @@ accommdisplay();
         <fieldset>
           <h2>Further Information</h2>
 
-          <p class="label"><span class="mandatory">*</span> <label for="registration.over18">Are you over 18?</label></p>
+          <p><span class="mandatory">*</span> <label for="registration.over18">Are you over 18?</label></p>
           <p class="entries">
             ${ h.radio('registration.over18', 1, label='Yes') }<br />
             ${ h.radio('registration.over18', 0, label='No') } <br />
            </p>
           <p class="note">Being under 18 will not stop you from registering. We need to know whether you are over 18 to allow us to cater for you at venues that serve alcohol.</p>
 
-          <p class="label"><label for="registration.diet">Dietary requirements:</label></p>
+          <p><label for="registration.diet">Dietary requirements:</label></p>
           <p class="entries">${ h.text('registration.diet', size=60) }</p>
 
-          <p class="label"><label for="registration.special">Other special requirements:</label></p>
+          <p><label for="registration.special">Other special requirements:</label></p>
           <p class="entries">${ h.text('registration.special', size=60) }</p>
           <p class="note">Please enter any requirements if necessary; access requirements, etc.</p>
 
-          <p class="label"><label for="registration.gender">What is your gender?</label></p>
+          <p><label for="registration.gender">What is your gender?</label></p>
           <p class="entries">${ h.text('registration.gender', size=60) }</p>
           <p class="note">PyCon Australia 2015 has a strong commitment to increasing gender diversity at the conference, your response to this question will be used solely to measure our success or failure in this endevour.</label></p>
 
 % if c.config.get('ask_past_confs', category='rego'):
-             <p class="label"><label for="registration.prevlca">Have you attended ${ c.event_generic_name } before?</label></p>
+             <p><label for="registration.prevlca">Have you attended ${ c.event_generic_name } before?</label></p>
             <p class="entries">
             <table>
               <tr>
@@ -539,21 +539,21 @@ accommdisplay();
 </tr>
 </table>
 
-            <p class="label"><label for="registration.nick">Superhero name:</label></p>
+            <p><label for="registration.nick">Superhero name:</label></p>
             <p class="entries">${ h.text('registration.nick', size=30) }</p>
             <p class="note">Your IRC nick or other handle you go by.</p>
 
 % if c.config.get('pgp_collection', category='rego') != 'no':
-            <p class="label"><label for="registration.keyid">GnuPG/PGP Keyid:</label></p>
+            <p><label for="registration.keyid">GnuPG/PGP Keyid:</label></p>
             <p class="entries">${ h.text('registration.keyid', size=10) }</p>
             <p class="note">If you have a GnuPG or PGP key then please enter its short key id here and we will print it on your badge.</p>
 % endif
 
-            <p class="label"><label for="registration.planetfeed">Planet Feed:</label></p>
+            <p><label for="registration.planetfeed">Planet Feed:</label></p>
             <p class="entries">${ h.text('registration.planetfeed', size=50) }</p>
             <p class="note">If you have a blog and would like it included in the ${ c.config.get('event_name') } planet, please specify an <b>${ c.config.get('event_name') } specific feed</b> to be included. (This is the URL of the RSS feed.)</p>
 
-            <p class="label"><label for="registration.silly_description">Description:</label>
+            <p><label for="registration.silly_description">Description:</label>
             <blockquote class="entries">${ c.silly_description }</blockquote></p>
             ${ h.hidden('registration.silly_description') }
             ${ h.hidden('registration.silly_description_checksum') }
