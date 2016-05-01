@@ -33,3 +33,10 @@ h1,h2,h3,h4,h5 {
 #t-shirt td {
     padding-right: 2em;
 }
+
+.mandatory {
+  color: #ff0000;
+  background: inherit;
+  margin-right: 5px;
+  float: left;
+}
