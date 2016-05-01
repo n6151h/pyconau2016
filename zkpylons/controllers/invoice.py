@@ -2,6 +2,8 @@ import datetime
 import logging
 import json
 
+from zkpylons.config.zkpylons_config import get_path
+
 from pylons import request, response, session, tmpl_context as c
 from zkpylons.lib.helpers import redirect_to
 
