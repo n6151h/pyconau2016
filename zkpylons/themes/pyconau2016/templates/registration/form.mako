@@ -428,7 +428,7 @@ accommdisplay();
 
           <p><label for="registration.gender">What is your gender?</label></p>
           <p class="entries">${ h.text('registration.gender', size=60) }</p>
-          <p class="note">PyCon Australia 2015 has a strong commitment to increasing gender diversity at the conference, your response to this question will be used solely to measure our success or failure in this endevour.</label></p>
+          <p class="note">PyCon Australia has a strong commitment to increasing gender diversity at the conference, your response to this question will be used solely to measure our success or failure in this endeavour.</label></p>
 
 % if c.config.get('ask_past_confs', category='rego'):
              <p><label for="registration.prevlca">Have you attended ${ c.event_generic_name } before?</label></p>
