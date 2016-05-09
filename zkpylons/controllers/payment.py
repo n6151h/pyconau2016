@@ -21,7 +21,7 @@ from zkpylons.lib.mail import email
 
 from zkpylons.model import meta, Payment, PaymentReceived, Invoice
 
-from zkpylons.config.lca_info import lca_info
+from zkpylons.model.config import Config
 
 import zkpylons.lib.pxpay as pxpay
 
@@ -154,7 +154,7 @@ class PaymentController(BaseController):
 
             # Extra validation
             import hashlib
-            fingerprint_valid = [payment.merchant_id, lca_info['payment_merchant_key'], payment.transaction_reference, str(payment.amount), str(fields['timestamp']), str(c.response['success_code'])]
+            fingerprint_valid = [payment.merchant_id, Config.get('payment_merchant_key', category="rego"), payment.transaction_reference, str(payment.amount), str(fields['timestamp']), str(c.response['success_code'])]
             if c.response['auth_code'] != hashlib.sha1("|".join(fingerprint_valid)).hexdigest():
                 validation_errors.append('Payment fingerprint did not match expected value.')
             if c.response['amount_paid'] != payment.amount:
@@ -176,7 +176,7 @@ class PaymentController(BaseController):
 
         if len(validation_errors) > 0 and c.response['approved']:
             # Suspiciously approved transaction which needs to be checked manually
-            email(lca_info['contact_email'], render('/payment/suspicious_payment.mako'))
+            email(Config.get('contact_email'), render('/payment/suspicious_payment.mako'))
 
         if c.person is not None:
             email(c.person.email_address, render('/payment/response.mako'))

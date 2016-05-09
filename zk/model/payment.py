@@ -1,10 +1,13 @@
 import sqlalchemy as sa
 
 from meta import Base
+import time
 
 from pylons.controllers.util import abort
 
 from meta import Session
+
+from zkpylons.model.config import Config
 
 class Payment(Base):
     """Stores details of payments made against invoices
@@ -22,6 +25,46 @@ class Payment(Base):
 
     def __repr__(self):
         return '<Payment id=%r>' % (self.id)
+
+    @property
+    def gateway(self):
+       return Config.get('payment_gateway', category='rego')
+
+    @property
+    def gateway_url(self):
+        return Config.get('payment_gateway_url', category='rego')
+
+    @property
+    def merchant_id(self):
+        return Config.get('payment_merchant_id', category='rego')
+
+    @property
+    def transaction_reference(self):
+        return Config.get('event_shortname') + ' i-' + str(self.invoice.id) + ' p-' + str(self.id)
+
+    @property
+    def transaction_type(self):
+        return Config.get('payment_default_transaction_type', category='rego')
+
+    @property
+    def securepay_fingerprint(self):
+        import hashlib
+        #fingerprint_values = [self.merchant_id, lca_info['payment_merchant_key'], self.transaction_type, self.transaction_reference, str(self.amount), self.creation_timestamp_utc.strftime('%Y%m%d%H%M%S')]
+        fingerprint_values = [self.merchant_id, Config.get('payment_merchant_key', category='rego'), self.transaction_type, self.transaction_reference, str(self.amount), self.creation_timestamp_utc_formattedstring]
+        return hashlib.sha1("|".join(fingerprint_values)).hexdigest()
+
+    @property
+    def creation_timestamp_utc(self):
+        from datetime import timedelta
+        return self.creation_timestamp - timedelta(hours=10)
+        
+    @property
+    def creation_timestamp_utc_formattedstring(self):
+        return time.strftime('%Y%m%d%H%M%S', time.gmtime())
+        
+    @property
+    def event_name(self):
+        return Config.get('event_name', category='rego')
 
     @classmethod
     def find_all(cls):

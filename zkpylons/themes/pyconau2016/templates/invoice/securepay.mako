@@ -25,7 +25,7 @@ ${ h.hidden('return_url', h.url_for(qualified=True, controller='invoice', action
 ${ h.hidden('return_url_text', 'Return to ' + c.payment.event_name) }
 ${ h.hidden('callback_url', h.url_for(protocol='http', qualified=True, controller='payment', action='new')) }
 <input type="hidden" name="card_types" value="VISA|MASTERCARD|AMEX">
-${ h.hidden('page_header_image', h.url_for('/img/Geelong-Wave-Gradient-medium.png', protocol='http')) }
+${ h.hidden('page_header_image', h.url_for('/img/logo-mel-sm.png', protocol='http')) }
 ${ h.hidden('page_style_url', h.url_for('/css/invoice.css', protocol='http')) }
 <p>${ h.submit('', 'Pay through SecurePay') }
 
