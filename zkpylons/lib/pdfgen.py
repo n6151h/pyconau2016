@@ -46,8 +46,6 @@ def wrap_pdf_response(pdf_data, filename):
 
     res = Response(pdf_data)
     res.headers['Content-type']='application/pdf'
-    #res.headers['Content-type']='application/octet-stream'
-    #res.headers['Content-type']='text/plain; charset=utf-8'
-    res.headers['Content-Disposition']=( 'attachment; filename=%s' % filename )
+    res.headers['Content-Disposition']=( 'attachment; filename=%s' % filename.encode('ascii') )
 
     return res

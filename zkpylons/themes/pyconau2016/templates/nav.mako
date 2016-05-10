@@ -2,7 +2,7 @@
 
 <%
     submenus = {
-        'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Aid'],
+        'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Assistance'],
         'melbourne': ['About', 'Sightseeing'],
         #'sponsors': ['Sponsors', 'Why Sponsor'],
         'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
@@ -18,7 +18,7 @@
     if url.startswith('/schedule'):
         url = '/programme' + url
 
-    if c.config.get('conference_status') == 'open' or h.signed_in_person().registration:
+    if c.config.get('conference_status') == 'open' or False: # h.signed_in_person().registration:
       mm_register = [('Register', '/register/prices', 'register')]
     else:
       mm_register = []
@@ -105,7 +105,7 @@ ${ parent.toolbox_extra() }
       ${ make_link('Submit a proposal', h.url_for(controller='proposal', action='new', id=None)) }
 %   endif
 
-%   if c.config.get('conference_status') == 'open' or h.signed_in_person().registration:
+%   if c.config.get('conference_status') == 'open' or False: #h.signed_in_person().registration:
       ${ make_link('Conference registration', '/register/status') }
 %   endif
 
