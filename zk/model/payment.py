@@ -1,3 +1,5 @@
+import logging
+
 import sqlalchemy as sa
 
 from meta import Base
@@ -8,6 +10,8 @@ from pylons.controllers.util import abort
 from meta import Session
 
 from zkpylons.model.config import Config
+
+log = logging.getLogger(__name__)
 
 class Payment(Base):
     """Stores details of payments made against invoices
@@ -51,6 +55,7 @@ class Payment(Base):
         import hashlib
         #fingerprint_values = [self.merchant_id, lca_info['payment_merchant_key'], self.transaction_type, self.transaction_reference, str(self.amount), self.creation_timestamp_utc.strftime('%Y%m%d%H%M%S')]
         fingerprint_values = [self.merchant_id, Config.get('payment_merchant_key', category='rego'), self.transaction_type, self.transaction_reference, str(self.amount), self.creation_timestamp_utc_formattedstring]
+        log.debug('FINGERPRINT: %s', hashlib.sha1("|".join(fingerprint_values)).hexdigest()) 
         return hashlib.sha1("|".join(fingerprint_values)).hexdigest()
 
     @property

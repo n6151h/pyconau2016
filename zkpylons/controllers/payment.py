@@ -155,6 +155,7 @@ class PaymentController(BaseController):
             # Extra validation
             import hashlib
             fingerprint_valid = [payment.merchant_id, Config.get('payment_merchant_key', category="rego"), payment.transaction_reference, str(payment.amount), str(fields['timestamp']), str(c.response['success_code'])]
+            log.debug('VALID FINGERPRINT: %s', hashlib.sha1("|".join(fingerprint_valid)).hexdigest())
             if c.response['auth_code'] != hashlib.sha1("|".join(fingerprint_valid)).hexdigest():
                 validation_errors.append('Payment fingerprint did not match expected value.')
             if c.response['amount_paid'] != payment.amount:
