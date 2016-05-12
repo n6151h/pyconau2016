@@ -1,4 +1,4 @@
-<%inherit file="/base.mako" />
+<%inherit file="../base.mako" />
 
 <h1>Pay invoice</h1>
 
@@ -21,12 +21,10 @@ ${ h.hidden('fp_timestamp', c.payment.creation_timestamp_utc_formattedstring) }
 ${ h.hidden('fingerprint', c.payment.securepay_fingerprint) }
 ${ h.hidden('display_cardholder_name', 'yes') }
 ${ h.hidden('email_address', c.payment.invoice.person.email_address) }
-${ h.hidden('return_url', h.url_for(qualified=True, controller='invoice', action='view', id=c.payment.invoice.id, protocol='https')) }
+${ h.hidden('return_url', h.url_for(protocol='https', qualified=True, controller='invoice', action='view', id=c.payment.invoice.id)) }
 ${ h.hidden('return_url_text', 'Return to ' + c.payment.event_name) }
-${ h.hidden('callback_url', h.url_for(protocol='http', qualified=True, controller='payment', action='new')) }
+${ h.hidden('callback_url', h.url_for(protocol='https', qualified=True, controller='payment', action='new')) }
 <input type="hidden" name="card_types" value="VISA|MASTERCARD|AMEX">
-${ h.hidden('page_header_image', h.url_for('/img/logo-mel-sm.png', protocol='http')) }
-${ h.hidden('page_style_url', h.url_for('/css/invoice.css', protocol='http')) }
 <p>${ h.submit('', 'Pay through SecurePay') }
 
 <p>Payment gateway kindly provided by:<br/>
