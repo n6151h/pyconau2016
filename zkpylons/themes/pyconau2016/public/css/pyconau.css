@@ -34,6 +34,10 @@ h1,h2,h3,h4,h5 {
     padding-right: 2em;
 }
 
+#prices th {
+    padding-right: 2em;
+}
+
 #prices td {
     padding-right: 2em;
 }
