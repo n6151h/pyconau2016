@@ -60,3 +60,18 @@ th {
 ul.entries {
   list-style-type: none;
 }
+
+
+.graph-bar-sold
+{
+  background-color: #FF2233;
+  height: 20px;
+  float: left;
+}
+
+.graph-bar-available
+{
+  background-color: #BBDD99;
+  height: 20px;
+  float: left;
+}
