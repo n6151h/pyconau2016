@@ -421,10 +421,11 @@ accommdisplay();
 
           <p><label for="registration.diet">Dietary requirements:</label></p>
           <p class="entries">${ h.text('registration.diet', size=60) }</p>
+          <p class="note">Please leave blank if you have no dietary requirements. Joke entries are not appreciated, this is a serious question.</p>
 
           <p><label for="registration.special">Other special requirements:</label></p>
           <p class="entries">${ h.text('registration.special', size=60) }</p>
-          <p class="note">Please enter any requirements if necessary; access requirements, etc.</p>
+          <p class="note">Please enter any requirements if necessary; access requirements, etc. Please leave blank if you have no special requirements. Joke entries are not appreciated, this is a serious question.</p>
 
           <p><label for="registration.gender">What is your gender?</label></p>
           <p class="entries">${ h.text('registration.gender', size=60) }</p>
