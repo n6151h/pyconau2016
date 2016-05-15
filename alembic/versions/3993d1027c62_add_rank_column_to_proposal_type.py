@@ -16,9 +16,10 @@ import sqlalchemy as sa
 
 def upgrade():
     op.add_column('proposal_type', sa.Column('rank', sa.types.Integer,
-                                             nullable=False,
                                              default=0))
+    op.execute("update proposal_type set rank=0")
 
+    op.alter_column('proposal_type', 'rank', nullable=False)
 
 def downgrade():
     op.drop_column('proposal_type', 'rank')
