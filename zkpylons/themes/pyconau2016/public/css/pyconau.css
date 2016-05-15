@@ -42,6 +42,14 @@ h1,h2,h3,h4,h5 {
     padding-right: 2em;
 }
 
+td {
+    padding-right: 1em;
+}
+
+th {
+    padding-right: 1em;
+}
+
 .mandatory {
   color: #ff0000;
   background: inherit;
