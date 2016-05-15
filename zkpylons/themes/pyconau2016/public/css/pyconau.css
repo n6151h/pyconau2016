@@ -34,11 +34,11 @@ h1,h2,h3,h4,h5 {
     padding-right: 2em;
 }
 
-#prices th {
+.prices th {
     padding-right: 2em;
 }
 
-#prices td {
+.prices td {
     padding-right: 2em;
 }
 
