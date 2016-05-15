@@ -65,7 +65,7 @@
 %     endfor
 %     for payment in c.invoice.payments:
             <li>
-              Payment ${ h.link_to(str(payment.id), url=h.url_for(controller='payment', action='view', id=payment.id)) } (${ payment.invoice.person.email_address })
+              Payment ${ h.link_to(str(payment.id), url=h.url_for(controller='payment', action='view', id=str(payment.id))) } (${ payment.invoice.person.email_address })
 %       if not payment.invoice.is_paid:
               ${ h.link_to("Add Payment", url=h.url_for(controller='payment', action='new_manual', id=payment.id)) }
 %       endif
