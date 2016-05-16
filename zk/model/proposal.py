@@ -338,4 +338,4 @@ class Proposal(Base):
     @classmethod
     def find_review_summary(cls):
         from review import Review
-        return Review.stats_query().join(cls).add_entity(cls).group_by(cls)
+        return Review.stats_query().join(cls).add_entity(cls).group_by(cls.id)
