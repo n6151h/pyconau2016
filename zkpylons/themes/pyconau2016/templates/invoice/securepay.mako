@@ -21,8 +21,8 @@ ${ h.hidden('fp_timestamp', c.payment.creation_timestamp_utc_formattedstring) }
 ${ h.hidden('fingerprint', c.payment.securepay_fingerprint) }
 ${ h.hidden('display_cardholder_name', 'yes') }
 ${ h.hidden('email_address', c.payment.invoice.person.email_address) }
-${ h.hidden('return_url', h.url_for(protocol='https', qualified=True, controller='payment', action='new', id=c.payment.invoice.id)) }
-${ h.hidden('callback_url', h.url_for(protocol='https', qualified=True, controller='payment', action='new')) }
+${ h.hidden('callback_url', h.url_for(protocol='http', qualified=True, controller='payment', action='new', id=c.payment.invoice.id)) }
+${ h.hidden('return_url', h.url_for(protocol='https', qualified=True, controller='invoice', action='view', id=c.payment.invoice.id)) }
 <input type="hidden" name="card_types" value="VISA|MASTERCARD|AMEX">
 <p>${ h.submit('', 'Pay through SecurePay') }
 
