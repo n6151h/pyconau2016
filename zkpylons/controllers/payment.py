@@ -182,9 +182,11 @@ class PaymentController(BaseController):
         if c.person is not None:
             email(c.person.email_address, render('/payment/response.mako'))
 
+        # <richard> disabled this because this URL is only invoked by the
+        #     payment gateway and should not result in a redirect
         # OK we now have a valid transaction, we redirect the user to the view page
         # so they can see if their transaction was accepted or declined
-        return redirect_to(action='view', id=payment.id)
+        # return redirect_to(action='view', id=payment.id)
 
     @authorize(h.auth.has_organiser_role)
     @dispatch_on(POST="_new_manual")
