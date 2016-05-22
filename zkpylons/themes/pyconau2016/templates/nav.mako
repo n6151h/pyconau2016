@@ -4,7 +4,7 @@
     submenus = {
         'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Assistance'],
         'melbourne': ['About', 'Sightseeing'],
-        #'sponsors': ['Sponsors', 'Why Sponsor'],
+        'sponsors': ['Sponsors', 'Contributor'],
         'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
         'register': ['Status', 'Prices', 'Accommodation', 'Terms and Conditions'],
