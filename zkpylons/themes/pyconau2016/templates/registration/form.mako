@@ -570,9 +570,9 @@ accommdisplay();
             <ul class="entries">
               <li> <label>${ h.checkbox('registration.signup.linuxaustralia') } membership with Linux Australia</label> <a href="http://www.linux.org.au/" target="_blank">(read more)</a>
 
-              <li> <label>${ h.checkbox('registration.signup.announce') } the low traffic <b>${ c.config.get('event_name') }  announcement list</b></label>
+              <li> <label>${ h.checkbox('registration.signup.announce') } the low traffic <b>${ c.config.get('event_name') } announcement mailing list</b></label>
 
-              <li> <label>${ h.checkbox('registration.signup.chat') } the <b>${ c.config.get('event_name') } attendees list</b></label>
+              <li> <label>${ h.checkbox('registration.signup.chat') } the <b>${ c.config.get('event_name') } attendees mailing list</b></label>
             </ul>
             </p>
           </fieldset>
