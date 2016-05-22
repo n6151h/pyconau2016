@@ -7,7 +7,7 @@
         #'sponsors': ['Sponsors', 'Why Sponsor'],
         'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
-        'register': ['Status', 'Prices', 'Terms and Conditions'],
+        'register': ['Status', 'Prices', 'Accommodation', 'Terms and Conditions'],
         #'register': ['Prices', 'Funding', 'Terms and Conditions'],
         'media': ['News','In the press','Graphics']
     }
