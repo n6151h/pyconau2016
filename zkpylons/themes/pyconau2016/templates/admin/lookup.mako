@@ -132,7 +132,7 @@ not registered
 %     endif
 %   endfor
 </table>
-%   if c.person.fulfilments:
+%   if getattr(c.person, 'fulfilments', []):
 <h2>Fulfilments</h2>
 <table class="table sortable">
   <tr>
