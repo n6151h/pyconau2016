@@ -26,6 +26,7 @@ class Registration(Base):
     planetfeed = sa.Column(sa.types.Text)
     voucher_code = sa.Column(sa.types.Text, sa.ForeignKey('voucher.code'), unique=True)
     diet = sa.Column(sa.types.Text)
+    gender = sa.Column(sa.types.Text)
     special = sa.Column(sa.types.Text)
     partner_name = sa.Column(sa.types.Text)
     partner_email = sa.Column(sa.types.Text)
