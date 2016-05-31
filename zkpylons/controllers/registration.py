@@ -120,6 +120,7 @@ class RegistrationSchema(BaseSchema):
     planetfeed = validators.String(if_missing=None)
     voucher_code = VoucherValidator(if_empty=None)
     diet = validators.String()
+    gender = validators.String()
     special = validators.String()
     signup = DictSet(if_missing=None)
     prevlca = DictSet(if_missing=None)
