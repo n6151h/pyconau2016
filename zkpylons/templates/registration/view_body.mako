@@ -17,13 +17,16 @@
         </p>
         </blockquote>
 %if c.registration.person.phone:
-        <p class="label"><b>Phone number:</b> ${ c.registration.person.phone }</p>
+        <label><b>Phone number:</b> ${ c.registration.person.phone }</label>
+	<br>
 %endif
 %if c.registration.person.mobile:
-        <p class="label"><b>Mobile/Cell number:</b> ${ c.registration.person.mobile }</p>
+        <label><b>Mobile/Cell number:</b> ${ c.registration.person.mobile }</label>
+	<br>
 %endif
 %if c.registration.person.company:
-        <p class="label"><b>Company:</b> ${ c.registration.person.company }</p>
+        <label><b>Company:</b> ${ c.registration.person.company }</label>
+	<br>
 %endif
 
 % for category in c.product_categories:
@@ -57,13 +60,16 @@
 
 %   elif category.name == 'Partners Programme':
 %     if c.registration.partner_name:
-        <p class="label"><b>Your partner's name:</b> ${ c.registration.partner_name }</p>
+        <label><b>Your partner's name:</b> ${ c.registration.partner_name }</label>
+ 	<br>
 %     endif
 %     if c.registration.partner_email:
-        <p class="label"><b>Your partner's email address:</b> ${ c.registration.partner_email }</p>
+        <label><b>Your partner's email address:</b> ${ c.registration.partner_email }</label>
+	<br>
 %     endif
 %     if c.registration.partner_mobile:
-        <p class="label"><b>Your partner's mobile number:</b> ${ c.registration.partner_mobile }</p>
+        <label><b>Your partner's mobile number:</b> ${ c.registration.partner_mobile }</label>
+	<br>
 %     endif
 %   endif
 %endif
@@ -74,16 +80,23 @@
         <p>${ h.yesno(c.registration.over18) |n } Over 18 year old</p>
 
 %if c.registration.voucher_code:
-        <p class="label"><b>Voucher Code:</b> ${ c.registration.voucher_code }</p>
+        <label><b>Voucher Code:</b> ${ c.registration.voucher_code }</label>
 %endif
 %if c.registration.diet:
-        <p class="label"><b>Dietary requirements:</b> ${ c.registration.diet }</p>
+        <label><b>Dietary requirements:</b> ${ c.registration.diet }</label>
+	<br>
 %endif
 %if c.registration.special:
-        <p class="label"><b>Other special requirements:</b> ${ c.registration.special }</p>
+        <label><b>Other special requirements:</b> ${ c.registration.special }</label>
+ 	<br>
 %endif
 
-          <p class="label"><label for="registration.prevlca"><b>Previous ${ c.config.get('event_generic_name') } attendance:</b></label></p>
+
+	<label><b>Gender:</b> ${c.registration.gender}</label>
+	<br>
+
+
+          <label><label for="registration.prevlca"><b>Previous ${ c.config.get('event_generic_name') } attendance:</b></label></label>
           <p class="entries">
 % for (year, desc) in c.config.get('past_confs', category='rego'):
             <br>
@@ -93,25 +106,25 @@
           </p>
 
 %if c.registration.shell:
-          <p class="label"><b>Your favourite shell:</b> ${ c.registration.shell }</p>
+          <label><b>Your favourite shell:</b> ${ c.registration.shell }</label>
 %endif
 %if c.registration.editor:
-          <p class="label"><b>Your favourite editor:</b> ${ c.registration.editor }</p>
+          <label><b>Your favourite editor:</b> ${ c.registration.editor }</label>
 %endif
 %if c.registration.distro:
-          <p class="label"><b>Your favourite distro:</b> ${ c.registration.distro }</p>
+          <label><b>Your favourite distro:</b> ${ c.registration.distro }</label>
 %endif
 %if c.registration.nick:
-          <p class="label"><b>Superhero name:</b> ${ c.registration.nick }</p>
+          <label><b>Superhero name:</b> ${ c.registration.nick }</label>
 %endif
 %if c.config.get('pgp_collection', category='rego') != 'no' and c.registration.keyid:
-          <p class="label"><b>GnuPG/PGP Keyid:</b> ${ c.registration.keyid }</p>
+          <label><b>GnuPG/PGP Keyid:</b> ${ c.registration.keyid }</label>
 %endif
 %if c.registration.planetfeed:
-          <p class="label"><b>Planet Feed:</b> ${ c.registration.planetfeed }</p>
+          <label><b>Planet Feed:</b> ${ c.registration.planetfeed }</label>
 %endif
 % if c.registration.silly_description:
-          <p class="label"><label for="registration.silly_description"><b>Description:</b> ${ c.registration.silly_description }</p>
+          <label><label for="registration.silly_description"><b>Description:</b> ${ c.registration.silly_description }</label>
           <p class="note">This is a randomly chosen description for your name badge</p>
 % endif
           <h2>Subscriptions</h2>
