@@ -59,6 +59,15 @@ ${ h.hidden('person.company', value='') }</p>
       </div>
       <div class="help-block with-errors"></div>
     </div>
+
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" id="personmobile" class="form-control" placeholder="Mobile Number" name="person.mobile" required />
+        <span class="input-group-addon" id="basic-addon2">required</span>
+      </div>
+      <div class="help-block with-errors"></div>
+    </div>
+
 %else:
 ${ h.hidden('person.phone') }
 ${ h.hidden('person.mobile') }
