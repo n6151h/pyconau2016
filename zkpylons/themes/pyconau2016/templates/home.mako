@@ -1,14 +1,5 @@
 ## -- coding: utf-8 --
 <%inherit file="/base.mako" />
-<%
-featured = []
-count = 0
-limit = 4
-for d in c.db_content_news_all:
-    if (h.featured_image(d.title) is not False) and (count < limit):
-        featured.append(d)
-        count += 1
-%>
 <h1>Welcome to ${ c.config.get('event_name') }!</h1>
 
 % if c.db_content is not None:
@@ -21,6 +12,22 @@ for d in c.db_content_news_all:
     <a href="${ h.url_for(controller='db_content', action='new') }">page database</a>.
   </p>
 % endif
+
+<h1>News</h1>
+%for d in c.db_content_news[:3]:
+    <article class="homepage-news">
+    <p class="date">${ d.creation_timestamp.strftime("%d&nbsp;%B&nbsp;%Y")|n}</p>
+        <div class="article-body">
+            <h4 class="news-title">${ h.link_to(d.title, url='/media/news/' + str(d.id)) }</h4>
+            <% (teaser, read_more) = h.make_teaser(d.body) %>
+            ${ teaser |n}
+            % if read_more:
+               &hellip; ${ h.link_to('more', url='/media/news/' + str(d.id)) }
+            % endif
+        </div>
+    </article>
+%endfor
+
 
 <%def name="short_title()"><%
   return "Homepage"
