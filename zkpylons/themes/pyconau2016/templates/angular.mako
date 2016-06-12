@@ -50,7 +50,6 @@
 						</button>
 						<a class="navbar-brand" href="#">${ c.config.get('event_name') }</a>
 					</div>
-					<%include file="nav.mako" />
 				</div>
 			</nav>
 		</div>

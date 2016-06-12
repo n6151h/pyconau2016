@@ -75,3 +75,26 @@ ul.entries {
   height: 20px;
   float: left;
 }
+
+#programme td, #programme th {
+  text-align: center;
+  font-size: 13px;
+  vertical-align: middle;
+  border-right: 1px solid #ccc;
+}
+
+#programme td i, #programme th i {
+  font-style: italic;
+}
+
+#programme .programme_break {
+  background-color: #ececec;
+}
+
+#programme .programme_plenary {
+  background-color: #d7dfe5;
+}
+
+#programme .multi {
+  background-color: #d2e7db;
+}
