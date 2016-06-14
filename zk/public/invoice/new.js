@@ -205,7 +205,7 @@ function new_ctrl($scope, $http, $filter) {
 		callback = function(response) {
 			$scope.processing = false;
 			// Response in an invoice id
-			window.location.href = response['r']['invoice_id'];
+			window.location.href = '/invoice/' + response['r']['invoice_id'];
 		};
 		return $scope.submit_invoice($event, callback)
 	}
