@@ -95,6 +95,35 @@ class ScheduleController(BaseController):
         end   = datetime.combine(c.display_date, time.max)
         c.locations = Location.query().join(Schedule).join(Event).join(TimeSlot).filter(TimeSlot.start_time.between(start, end)).filter(Event.exclusive != True).all()
 
+        single, multi = [], []
+        for loc in c.locations:
+            if '&' in loc.display_name:
+                multi.append(loc)
+            else:
+                single.append(loc)
+
+        c.single = single
+
+        single = single[:]
+        combinations = []
+        while multi:
+            multi_loc = multi.pop(0)
+
+            while single and single[0].display_name not in multi_loc.display_name:
+                single.pop(0)
+                combinations.append(None)
+
+            combinations.append(multi_loc)
+
+            while single and single[0].display_name in multi_loc.display_name:
+                single.pop(0)
+
+        while single:
+            single.pop()
+            combinations.append(None)
+
+        c.combinations = combinations
+
         # Find the list of scheduled items for the required date
         c.schedule_collection = Schedule.find_by_date(c.display_date)
 

@@ -13,16 +13,26 @@ def inherit(context):
 <p class="note"><i>Schedule is subject to change without notice.</i></p>
 
 <table id="programme" style="" summary="Programme" cellpadding="" cellspacing="">
-  <thead>
+ <thead>
     <tr>
       <th>&nbsp;</th>
-%for location in c.locations:
+%for location in c.single:
       <th class="programme_room">
         ${ location.display_name }
 %     if c.can_edit:
         <br />${ h.link_to('Edit', url=h.url_for(controller='location', action='edit', id=location.id)) }
 %     endif
       </th>
+%endfor
+    </tr>
+    <tr>
+      <th>&nbsp;</th>
+%for location in c.combinations:
+%     if location:
+        <th class="programme_room" colspan="${location.display_name.count('&') + 1}">${ location.display_name }</th>
+%     else:
+        <th>&nbsp;</th>
+%     endif
 %endfor
     </tr>
   </thead>
@@ -66,6 +76,7 @@ def inherit(context):
 %>
 ## TODO: time_slot may not be set here if time is not primary
       <td class="programme_${ event.type.name }" colspan="${ len(c.locations) }" rowspan="${ (time_slot.end_time - time_slot.start_time).seconds/60/5 }">
+
 %   if event.publish or c.can_edit:
 %     if event.url:
         ${ h.link_to(title, url=url)}
@@ -120,7 +131,8 @@ def inherit(context):
 %     if time_slot.heading:
       <th class="programme_${event.type.name}">
 %     else:
-      <td class="programme_${event.type.name}" rowspan="${ (time_slot.end_time - time_slot.start_time).seconds/60/5 }">
+      <td class="programme_${event.type.name}" colspan="${location.display_name.count('&') + 1}" rowspan="${ (time_slot.end_time - time_slot.start_time).seconds/60/5 }">
+
 %     endif
 %     if event.publish or c.can_edit:
 %       if not time_slot.primary:
