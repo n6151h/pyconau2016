@@ -37,8 +37,6 @@
 			<div id="col-left">
 				<div id="sidebar">
 					<h3>Toolbox</h3>      <%include file="/leftcol/toolbox.mako" args="parent=self" />
-					<h3>News</h3>         <%include file="/leftcol/news.mako" />
-					<h3>In the press</h3> <%include file="/leftcol/in_the_press.mako" />
 				</div>
 			</div><!-- col-left -->
 

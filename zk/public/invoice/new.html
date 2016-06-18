@@ -1,6 +1,6 @@
 <div>
 	<h1>New Invoice</h1>
-	<label for="person_id" style="display: inline; padding-right: 20px">Person</label><input id="person_id" type="text" ng-model="invoice.person_id" required style="margin: 0;">
+	<label for="person_id" style="display: inline; padding-right: 20px">Person ID</label><input id="person_id" type="text" ng-model="invoice.person_id" required style="margin: 0;">
 	<label for="due_date" style="display: inline; padding-right: 20px">Due Date (dd/mm/yyyy)</label><input id="due_date" type="text" ng-model="invoice.due_date" required style="margin: 0;">
 	<br style="margin: 20px"/>
 	<table id="invoice_items" class="table table-striped table-bordered">
@@ -53,6 +53,6 @@
 </div>
 <div>
 	<h2>Refund Existing Invoice</h2>
-	<label for="refund_invoice_id" style="display: inline; padding-right: 20px">Invoice ID:</label><input type="number" id=refund_invoice_id" ng-model="refund.invoice_id" style="margin: 0;">
+	<label for="refund_invoice" style="display: inline; padding-right: 20px">Invoice ID:</label><input type="number" id=refund_invoice_id" ng-model="refund.invoice_id" style="margin: 0;">
 	<a id="refund_invoice" class="btn" ng-click="refund_invoice($event)">Refund Invoice</a>
 </div>
