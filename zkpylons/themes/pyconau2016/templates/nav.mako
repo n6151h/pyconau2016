@@ -7,7 +7,7 @@
         'sponsors': ['Sponsors', 'Contributor'],
         'programme': [
             'Friday', 'Saturday', 'Sunday',
-            'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'
+            'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf',
             'Call for Proposals',
         ],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
