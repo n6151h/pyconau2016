@@ -5,7 +5,11 @@
         'about': ['PyCon Australia', 'Venue', 'Code of Conduct', 'Financial Assistance'],
         'melbourne': ['About', 'Sightseeing'],
         'sponsors': ['Sponsors', 'Contributor'],
-        'programme': ['Call for Proposals', 'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'],
+        'programme': [
+            'Friday', 'Saturday', 'Sunday',
+            'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf'
+            'Call for Proposals',
+        ],
         #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
         'register': ['Status', 'Prices', 'Accommodation', 'Terms and Conditions'],
         #'register': ['Prices', 'Funding', 'Terms and Conditions'],
