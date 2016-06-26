@@ -83,6 +83,10 @@ ul.entries {
   border-right: 1px solid #ccc;
 }
 
+#programme td {
+  border-bottom: 1px solid #ccc;
+}
+
 #programme td i, #programme th i {
   font-style: italic;
 }
