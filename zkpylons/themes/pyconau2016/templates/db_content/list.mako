@@ -17,7 +17,7 @@
     <tr class="${ h.cycle('even', 'odd')}">
         <td>${ h.link_to(str(d.id) + ' (edit)', url=h.url_for(controller='db_content', action='edit', id=d.id)) }</td>
 %   if d.is_news() or d.is_page():
-        <td>${ h.link_to(str(d.title) + ' (view)', url=h.url_for(controller='db_content', action='view', id=d.id)) }</td>
+        <td>${ h.link_to(d.title + ' (view)', url=h.url_for(controller='db_content', action='view', id=d.id)) }</td>
 %   else:
         <td>${ d.title }</td>
 %   endif

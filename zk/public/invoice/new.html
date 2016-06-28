@@ -31,11 +31,11 @@
 	</table>
 
 	<div style="float: right; margin-right: 50px;">
-		<a id="new_invoice" class="btn" ng-click="new_invoice($event)" ng-disabled="processing">New Invoice</a>
-		<a id="submit_view" class="btn" ng-click="submit_view_invoice($event)" ng-disabled="processing">Save and View</a>
-		<a id="submit_new" class="btn" ng-click="submit_new_invoice($event)" ng-disabled="processing">Save and New</a>
-		<a id="submit_checkin" class="btn" ng-click="submit_checkin_invoice($event)" ng-disabled="processing">Card</a>
-		<a id="submit_pay_checkin" class="btn" ng-click="submit_cash_checkin_invoice($event)" ng-disabled="processing" data-loading-text="Processing">Cash Received</a>
+		<a id="new_invoice" class="btn btn-default" ng-click="new_invoice($event)" ng-disabled="processing">New Invoice</a>
+		<a id="submit_view" class="btn btn-default" ng-click="submit_view_invoice($event)" ng-disabled="processing">Save and View</a>
+		<a id="submit_new" class="btn btn-default" ng-click="submit_new_invoice($event)" ng-disabled="processing">Save and New</a>
+		<a id="submit_checkin" class="btn btn-default" ng-click="submit_checkin_invoice($event)" ng-disabled="processing">Card</a>
+		<a id="submit_pay_checkin" class="btn btn-default" ng-click="submit_cash_checkin_invoice($event)" ng-disabled="processing" data-loading-text="Processing">Cash Received</a>
 	</div>
 </div>
 <div>
@@ -43,16 +43,16 @@
 	<select id="product_select" ng-model="product_select" ng-options="product.description group by product.category for product in product_list | orderBy: ['category_order', 'product_order']" style="width: 400px">
 		<option value="">-- Choose Product --</option>
 	</select>
-	<a id="add_line" class="btn" ng-click="add_line()">Add</a>
+	<a id="add_line" class="btn btn-default" ng-click="add_line()">Add</a>
 </div>
 <div>
 	<h2>Add Manual Line</h2>
 	<label for="manual_description" style="display: inline; padding-right: 20px">Description:</label><input type="text" id="manual_description" ng-model="manual.description" style="margin: 0;">
 	<label for="manual_cost" style="display: inline; padding-right: 20px">Cost $</label><input type="text" id="manual_cost" cents ng-model="manual.cost" style="margin: 0;">
-	<a id="add_manual" class="btn" ng-click="add_manual($event)">Add</a>
+	<a id="add_manual" class="btn btn-default" ng-click="add_manual($event)">Add</a>
 </div>
 <div>
 	<h2>Refund Existing Invoice</h2>
 	<label for="refund_invoice" style="display: inline; padding-right: 20px">Invoice ID:</label><input type="number" id=refund_invoice_id" ng-model="refund.invoice_id" style="margin: 0;">
-	<a id="refund_invoice" class="btn" ng-click="refund_invoice($event)">Refund Invoice</a>
+	<a id="refund_invoice" class="btn btn-default" ng-click="refund_invoice($event)">Refund Invoice</a>
 </div>

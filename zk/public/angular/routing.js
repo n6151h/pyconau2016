@@ -93,6 +93,7 @@ if(!document.baseURI.length)
 if(window.location.href.indexOf(document.baseURI) != 0)
 	throw new Error('Location must be relative to base');
 var request = window.location.href.substr(document.baseURI.length);
+request = request.replace(/(\?.*$)/, '');
 
 require.config({
 	baseUrl : "/angular",
