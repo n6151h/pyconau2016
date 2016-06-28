@@ -37,7 +37,7 @@
 	] + mm_register + [
 #        ('Media', '/media/news', 'media'),
         ('Contact', '/contact', 'contact'),
-#        ('Wiki', '/wiki', 'wiki'),
+        ('Wiki', '/wiki', 'wiki'),
     ]
 
     where = ''
