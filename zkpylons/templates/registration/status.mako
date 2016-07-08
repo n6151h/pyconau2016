@@ -5,7 +5,7 @@
     <div class="notice-box">
 % if c.config.get('conference_status') == 'not_open':
       <b>Registrations</b> are <i>not</i> open<br><br>
-% elif c.config.get('conference_status') == 'open' and c.ceilings['conference-paid'].available():
+% elif c.config.get('conference_status') == 'open' and c.ceilings['conference-all'].available():
       <b>Registrations</b> are open<br><br>
 % else:
       <b>Registrations are closed</b><br><br>
@@ -14,7 +14,7 @@
 """
 %>
       <h3>Conference Status</h3>
-% if c.config.get('conference_status') == 'open' and c.ceilings['conference-earlybird'].available() and c.ceilings['conference-paid'].available():
+% if c.config.get('conference_status') == 'open' and c.ceilings['conference-earlybird'].available() and c.ceilings['conference-all'].available():
       <b>Earlybird</b> registrations are currently available! Only a limited number of Earlybird registrations are available however so be sure to pay before they're all gone.<br />
       Earlybird sales status:<br />
 
@@ -30,27 +30,27 @@
       (${ h.number_to_percentage(100-c.ceilings['conference-earlybird'].percent_invoiced()) })
       </div>
 
-% elif c.config.get('conference_status') == 'open' and c.ceilings['conference-paid'].available() and not c.ceilings['conference-earlybird'].available():
+% elif c.config.get('conference_status') == 'open' and c.ceilings['conference-all'].available() and not c.ceilings['conference-earlybird'].available():
 
-      <div class="graph-bar-sold" style = "width:${ h.number_to_percentage(c.ceilings['conference-paid'].percent_invoiced())}; text-align:center">
-% if c.ceilings['conference-paid'].percent_invoiced() > 10: #Only display the Sold text if there is enough room
-      Sold (${ h.number_to_percentage(c.ceilings['conference-paid'].percent_invoiced()) })
+      <div class="graph-bar-sold" style = "width:${ h.number_to_percentage(c.ceilings['conference-all'].percent_invoiced())}; text-align:center">
+% if c.ceilings['conference-all'].percent_invoiced() > 10: #Only display the Sold text if there is enough room
+      Sold (${ h.number_to_percentage(c.ceilings['conference-all'].percent_invoiced()) })
 % endif
       </div>
 
-     <div class="graph-bar-available" style = "width:${ h.number_to_percentage(100-c.ceilings['conference-paid'].percent_invoiced()) }; text-align:center">
-% if c.ceilings['conference-paid'].percent_invoiced() < 85: #Only display the Available text if there is room
+     <div class="graph-bar-available" style = "width:${ h.number_to_percentage(100-c.ceilings['conference-all'].percent_invoiced()) }; text-align:center">
+% if c.ceilings['conference-all'].percent_invoiced() < 85: #Only display the Available text if there is room
       Available
 % endif
-% if c.ceilings['conference-paid'].percent_invoiced() < 95: #Only display the Available text if there is room
-      (${ h.number_to_percentage(100-c.ceilings['conference-paid'].percent_invoiced()) })
+% if c.ceilings['conference-all'].percent_invoiced() < 95: #Only display the Available text if there is room
+      (${ h.number_to_percentage(100-c.ceilings['conference-all'].percent_invoiced()) })
 % endif
       </div>
 
 
 % endif
 
-% if 'conference-paid' not in c.ceilings or (c.registration is None and c.config.get('conference_status') == 'not_open'):
+% if 'conference-all' not in c.ceilings or (c.registration is None and c.config.get('conference_status') == 'not_open'):
     <h2>Registrations are not open</h2>
     <p>Registrations are not yet open. Please come back soon!</p>
 % elif c.registration is None and c.config.get('conference_status') == 'closed':
@@ -58,7 +58,7 @@
     <p>Registrations are completely closed.</p>
 % else:
 
-% if not c.ceilings['conference-paid'].available():
+% if not c.ceilings['conference-all'].available():
     <h2>Registrations are closed</h2>
     <p>Registrations are now closed. You will only be able to register if you
     have an existing voucher code or if you're otherwise entitled to attend
