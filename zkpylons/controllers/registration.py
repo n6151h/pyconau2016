@@ -942,9 +942,6 @@ class RegistrationController(BaseController):
     @authorize(h.auth.has_organiser_role)
     def generate_badges(self):
         defaults = dict(request.POST)
-        stamp = False
-        if defaults.has_key('stamp') and defaults['stamp']:
-            stamp = defaults['stamp']
         c.text = ''
         data = []
         if request.method == 'POST' and defaults:
@@ -960,7 +957,7 @@ class RegistrationController(BaseController):
                     return render('registration/generate_badges.mako')
                 else:
                     for registration in registration_list:
-                        data.append(self._registration_badge_data(registration, stamp))
+                        data.append(self._registration_badge_data(registration))
                         registration.person.badge_printed = True
             else:
                 regos = [(r.person.lastname.lower(), r.person.firstname.lower(), r)
@@ -996,7 +993,7 @@ class RegistrationController(BaseController):
                             elif defaults['type'] == 'volunteer' and registration.person.is_volunteer():
                                 append = True
                         if append:
-                            data.append(self._registration_badge_data(registration, stamp))
+                            data.append(self._registration_badge_data(registration))
                             registration.person.badge_printed = True
 
             meta.Session.commit() # save badge printed data
@@ -1028,7 +1025,7 @@ class RegistrationController(BaseController):
             return res
         return render('registration/generate_badges.mako')
 
-    def _registration_badge_data(self, registration, stamp = False):
+    def _registration_badge_data(self, registration):
         if registration:
             dinner_tickets = 0
             speakers_tickets = 0
@@ -1038,14 +1035,14 @@ class RegistrationController(BaseController):
             for invoice in registration.person.invoices:
                 if invoice.is_paid and not invoice.is_void:
                     for item in invoice.items:
-                        if item.description.startswith('Penguin Dinner'):
+                        if item.description.startswith('Dinner'):
                             dinner_tickets += item.qty
                         elif item.description.startswith('Speakers Dinner'):
                             speakers_tickets += item.qty
                         elif item.description.find('Student') > -1:
-                            ticket = 'Hobbyist'
-                        elif item.description.find('Hobbyist') > -1:
-                            ticket = 'Hobbyist'
+                            ticket = 'Student'
+                        elif item.description.find('Enthusiast') > -1:
+                            ticket = 'Enthusiast'
                         elif item.description.find('Professional') > -1 or item.description.find('Korora') > -1:
                             ticket = 'Professional'
                             pdns_ticket = True
@@ -1073,52 +1070,54 @@ class RegistrationController(BaseController):
                 ticket = 'Volunteer'
 
             region = 'world'
-            if registration.person.country.strip().lower() == 'australia' and registration.person.state.strip().lower() in ['tas', 'tasmania']:
-                region = 'tasmania'
-            elif registration.person.country.strip().lower() == 'australia':
+            country = registration.person.country or ''
+            country = country.strip().lower()
+            if country == 'australia':
                 region = 'australia'
-            elif registration.person.country.strip().lower() == 'switzerland':
+            elif country == 'switzerland':
                 region = 'switzerland'
-            elif registration.person.country.strip().lower() == 'canada':
+            elif country == 'canada':
                 region = 'canada'
-            elif registration.person.country.strip().lower() == 'finland':
+            elif country == 'finland':
                 region = 'finland'
-            elif registration.person.country.strip().lower() == 'norway':
+            elif country == 'norway':
                 region = 'norway'
-            elif registration.person.country.strip().lower() in ['new zealand', 'nz']:
+            elif country in ['new zealand', 'nz']:
                 region = 'new_zealand'
 
             favourites = []
-            if registration.shell != '':
+            if registration.shell:
                 favourites.append(self._sanitise_badge_field(registration.shell))
-            if registration.editor != '':
+            if registration.editor:
                 favourites.append(self._sanitise_badge_field(registration.editor))
-            if registration.distro != '':
+            if registration.distro:
                 favourites.append(self._sanitise_badge_field(registration.distro))
 
-            data = { 'ticket': ticket,
-                     'firstname' : self._sanitise_badge_field(registration.person.firstname),
-                     'lastname' : self._sanitise_badge_field(registration.person.lastname),
-                     'nickname': self._sanitise_badge_field(registration.nick),
-                     'company': self._sanitise_badge_field(registration.person.company),
-                     'favourites': ", ".join(favourites),
-                     'region': region,
-                     'dinner_tickets': dinner_tickets,
-                     'speakers_tickets': speakers_tickets,
-                     'pdns_ticket' : pdns_ticket,
-                     'over18': registration.over18,
-                     'silly': self._sanitise_badge_field(registration.silly_description),
-                     'breakfast': breakfast
-
+            data = {
+                'ticket': ticket,
+                'firstname' : self._sanitise_badge_field(registration.person.firstname),
+                'lastname' : self._sanitise_badge_field(registration.person.lastname),
+                'nickname': self._sanitise_badge_field(registration.nick),
+                'company': self._sanitise_badge_field(registration.person.company),
+                'favourites': ", ".join(favourites),
+                'region': region,
+                'dinner_tickets': dinner_tickets,
+                'speakers_tickets': speakers_tickets,
+                'pdns_ticket' : pdns_ticket,
+                'over18': registration.over18,
+                'silly': self._sanitise_badge_field(registration.silly_description),
+                'breakfast': breakfast
             }
 
             # For some reason some keys are None even if pgp_collection is yes, should probably fix the real problem.
             if Config.get('pgp_collection', category='rego') != 'no' and registration.keyid:
-                    data['gpg'] = self._sanitise_badge_field(registration.keyid)
+                data['gpg'] = self._sanitise_badge_field(registration.keyid)
             return data
         return {'ticket': '', 'firstname': '', 'lastname': '', 'nickname': '', 'company': '', 'favourites': '', 'gpg': '', 'region': '', 'dinner_tickets': 0, 'speakers_tickets': 0, 'pdns_ticket' : False, 'over18': True, 'silly': '','breakfast': 0}
 
     def _sanitise_badge_field(self, field):
+        if not field:
+            return ''
         disallowed_chars = re.compile(r'(\n|\r\n|\t)')
         return disallowed_chars.sub(' ', h.escape(field.strip()))
 

@@ -20,7 +20,5 @@ ${ h.form(h.url_for()) }
 <p><i>Or</i> Registration ID (one per line):<br>
 <textarea id="reg_id" name="reg_id"></textarea></p>
 
-<p><label for="stamp">Include Stamp? <input type="checkbox" value="1" id="stamp" name="stamp" /></label> (recommended for All)</p>
-
 <p class="submit">${ h.submit('submit', 'Generate') }</p>
 ${ h.end_form() }

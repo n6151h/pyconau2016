@@ -1211,43 +1211,6 @@ class AdminController(BaseController):
         return key_list
 
     @authorize(h.auth.has_organiser_role)
-    def rego_desk_list(self):
-        """ List of people who have not checked in (see checkins table). [Registrations] """
-        import zkpylons.model
-        checkedin = zkpylons.model.metadata.bind.execute("SELECT person_id FROM checkins WHERE conference IS NOT NULL");
-        checkedin_list = checkedin.fetchall()
-        registration_list = meta.Session.query(Registration).all()
-        c.columns = ['ID', 'Name', 'Type', 'Shirts', 'Dinner Tickets', 'Partners Programme']
-        c.data = []
-        for registration in registration_list:
-            if (registration.person.id not in [id[0] for id in checkedin_list]) and registration.person.has_paid_ticket():
-                shirts = []
-                dinner_tickets = 0
-                ticket_types = []
-                partners_programme = []
-                for invoice in registration.person.invoices:
-                    if invoice.is_paid and not invoice.is_void:
-                        for item in invoice.items:
-                            if item.description.lower().startswith("discount"):
-                                pass
-                            elif item.description.lower().find("shirt") > -1:
-                                shirts.append(item.description + " x" + str(item.qty))
-                            elif item.description.lower().startswith("dinner"):
-                                dinner_tickets += item.qty
-                            elif item.description.lower().startswith("partners"):
-                                partners_programme.append(item.description + " x" + str(item.qty))
-                            elif item.description.lower().endswith("ticket") or item.description.lower().startswith("press pass"):
-                                ticket_types.append(item.description + " x" + str(item.qty))
-                c.data.append([registration.person.id,
-                               registration.person.fullname,
-                               ", ".join(ticket_types),
-                               ", ".join(shirts),
-                               dinner_tickets,
-                               ", ".join(partners_programme)])
-
-        return table_response()
-
-    @authorize(h.auth.has_organiser_role)
     def previous_years_stats(self):
         """ Details on how many people have come to previous years of LCA. All people - including unpaid [Statistics] """
         registration_list = meta.Session.query(Registration).all()
@@ -1489,9 +1452,12 @@ class AdminController(BaseController):
         people = [row[-1] for row in people]
 
         # Find the categories that we display in the rego list.
+        categories_ignore = set(['Child Care', "Partners' Programme", 'Speakers Dinner Ticket'])
         categories = []
         for category in ProductCategory.find_all():
           name = category.name
+          if name in categories_ignore:
+              continue
           if name != 'Ticket':
             if name != 'Accommodation' or not (name == 'Accommodation' and (len(category.products) == 0 or (len(category.products) == 1 and category.products[0].cost == 0))):
               categories.append(category.name)
@@ -1506,8 +1472,8 @@ class AdminController(BaseController):
           row = [ "%s, %s" % (person.lastname, person.firstname) ]
           not_paid = ''
           if not person.paid():
-            not_paid = '{\\bf NOT PAID} \\newline '
-          row.append(not_paid + '\\barcode{' + str(person.id) + '}')
+            not_paid = 'NOT PAID'
+          row.append(not_paid)
           row.append(person.id)
 
           bag = 'Prof'
