@@ -20,5 +20,8 @@ ${ h.form(h.url_for()) }
 <p><i>Or</i> Registration ID (one per line):<br>
 <textarea id="reg_id" name="reg_id"></textarea></p>
 
+<p><i>Or</i> Person ID (one per line):<br>
+<textarea id="person_id" name="person_id"></textarea></p>
+
 <p class="submit">${ h.submit('submit', 'Generate') }</p>
 ${ h.end_form() }

@@ -945,20 +945,36 @@ class RegistrationController(BaseController):
         c.text = ''
         data = []
         if request.method == 'POST' and defaults:
-            if defaults['reg_id'] != '':
-                reg_id_list = defaults['reg_id'].split("\n")
+            if defaults['reg_id']:
+                reg_id_list = map(int, defaults['reg_id'].split("\n"))
                 regos = [(r.person.lastname.lower(), r.person.firstname.lower(), r)
                          for r in Registration.find_by_ids(reg_id_list)]
                 regos.sort()
                 registration_list = [row[-1] for row in regos]
 
                 if len(registration_list) != len(reg_id_list):
-                    c.text = 'Registration ID not found. Please check the <a href="/registration">registration list</a>.'
+                    c.text = 'Registration ID (%r) not found. Please check the <a href="/registration">registration list</a>.' % (reg_id_list, )
                     return render('registration/generate_badges.mako')
                 else:
                     for registration in registration_list:
                         data.append(self._registration_badge_data(registration))
                         registration.person.badge_printed = True
+
+            elif defaults['person_id']:
+                reg_id_list = map(int, defaults['person_id'].split("\n"))
+                regos = [(r.person.lastname.lower(), r.person.firstname.lower(), r)
+                         for r in Registration.find_by_person_ids(reg_id_list)]
+                regos.sort()
+                registration_list = [row[-1] for row in regos]
+
+                if len(registration_list) != len(reg_id_list):
+                    c.text = 'Registration ID (%r) not found. Please check the <a href="/registration">registration list</a>.' % (reg_id_list, )
+                    return render('registration/generate_badges.mako')
+                else:
+                    for registration in registration_list:
+                        data.append(self._registration_badge_data(registration))
+                        registration.person.badge_printed = True
+
             else:
                 regos = [(r.person.lastname.lower(), r.person.firstname.lower(), r)
                          for r in Registration.find_all()]

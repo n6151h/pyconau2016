@@ -72,5 +72,9 @@ class Registration(Base):
         return Session.query(Registration).filter(Registration.id.in_(id_list)).all()
 
     @classmethod
+    def find_by_person_ids(cls, id_list):
+        return Session.query(Registration).filter(Registration.person_id.in_(id_list)).all()
+
+    @classmethod
     def find_all(cls):
         return Session.query(Registration).order_by(Registration.id).all()
