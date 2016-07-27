@@ -942,7 +942,6 @@ class RegistrationController(BaseController):
     @authorize(h.auth.has_organiser_role)
     def generate_badges(self):
         defaults = dict(request.POST)
-        c.text = ''
         data = []
         if request.method == 'POST' and defaults:
             if defaults['reg_id']:
@@ -1044,7 +1043,6 @@ class RegistrationController(BaseController):
     def _registration_badge_data(self, registration):
         if registration:
             dinner_tickets = 0
-            speakers_tickets = 0
             breakfast = 0
             pdns_ticket = False
             ticket = ''
@@ -1053,13 +1051,11 @@ class RegistrationController(BaseController):
                     for item in invoice.items:
                         if item.description.startswith('Dinner'):
                             dinner_tickets += item.qty
-                        elif item.description.startswith('Speakers Dinner'):
-                            speakers_tickets += item.qty
                         elif item.description.find('Student') > -1:
                             ticket = 'Student'
                         elif item.description.find('Enthusiast') > -1:
                             ticket = 'Enthusiast'
-                        elif item.description.find('Professional') > -1 or item.description.find('Korora') > -1:
+                        elif item.description.find('Professional') > -1:
                             ticket = 'Professional'
                             pdns_ticket = True
                         elif item.description.find('Press') > -1:
@@ -1068,10 +1064,8 @@ class RegistrationController(BaseController):
                         elif item.description.startswith('Organiser'):
                             ticket = 'Organiser'
                             pdns_ticket = True
-                        elif item.description.find('Miniconf-Only') > -1 or item.description.find('Minconf-Only') > -1:
+                        elif item.description.find('Miniconf-Only') > -1:
                             ticket = 'Miniconfs Only'
-                        elif item.description.find('Fairy Penguin Sponsor') > -1 or item.description.find('Fairy Penguin Sponsor') > -1:
-                            ticket = 'Sponsor'
                         elif item.description.find('reakfast') > -1:
                             breakfast += item.qty
             if registration.person.has_role('core_team'):
@@ -1101,28 +1095,13 @@ class RegistrationController(BaseController):
             elif country in ['new zealand', 'nz']:
                 region = 'new_zealand'
 
-            favourites = []
-            if registration.shell:
-                favourites.append(self._sanitise_badge_field(registration.shell))
-            if registration.editor:
-                favourites.append(self._sanitise_badge_field(registration.editor))
-            if registration.distro:
-                favourites.append(self._sanitise_badge_field(registration.distro))
-
             data = {
                 'ticket': ticket,
                 'firstname' : self._sanitise_badge_field(registration.person.firstname),
                 'lastname' : self._sanitise_badge_field(registration.person.lastname),
-                'nickname': self._sanitise_badge_field(registration.nick),
                 'company': self._sanitise_badge_field(registration.person.company),
-                'favourites': ", ".join(favourites),
-                'region': region,
                 'dinner_tickets': dinner_tickets,
-                'speakers_tickets': speakers_tickets,
-                'pdns_ticket' : pdns_ticket,
-                'over18': registration.over18,
-                'silly': self._sanitise_badge_field(registration.silly_description),
-                'breakfast': breakfast
+                'over18': registration.over18
             }
 
             # For some reason some keys are None even if pgp_collection is yes, should probably fix the real problem.
