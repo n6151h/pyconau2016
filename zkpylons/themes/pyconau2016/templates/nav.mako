@@ -6,7 +6,7 @@
         'melbourne': ['About', 'Sightseeing'],
         'sponsors': ['Sponsors', 'Contributor'],
         'programme': [
-            'Friday', 'Saturday', 'Sunday',
+            'Friday - Miniconfs', 'Saturday - Conference day one', 'Sunday - Conference day two', 'Monday - Sprints', 'Tuesday - Sprints',
             'DjangoCon AU', 'Python in Education Seminar', 'Science and Data Miniconf', 'Internet of Things Miniconf',
             'Call for Proposals',
         ],
