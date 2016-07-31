@@ -1043,8 +1043,6 @@ class RegistrationController(BaseController):
     def _registration_badge_data(self, registration):
         if registration:
             dinner_tickets = 0
-            breakfast = 0
-            pdns_ticket = False
             ticket = ''
             for invoice in registration.person.invoices:
                 if invoice.is_paid and not invoice.is_void:
@@ -1057,50 +1055,26 @@ class RegistrationController(BaseController):
                             ticket = 'Enthusiast'
                         elif item.description.find('Professional') > -1:
                             ticket = 'Professional'
-                            pdns_ticket = True
                         elif item.description.find('Press') > -1:
                             ticket = 'Press'
-                            pdns_ticket = True
-                        elif item.description.startswith('Organiser'):
-                            ticket = 'Organiser'
-                            pdns_ticket = True
                         elif item.description.find('Miniconf-Only') > -1:
-                            ticket = 'Miniconfs Only'
-                        elif item.description.find('reakfast') > -1:
-                            breakfast += item.qty
+                            ticket = 'Friday Only'
+
             if registration.person.has_role('core_team'):
                 ticket = 'Organiser'
-            elif registration.person.is_speaker():
-                ticket = 'Speaker'
-                pdns_ticket = True
-            elif registration.person.is_miniconf_org():
-                ticket = 'Miniconf Organiser'
-                pdns_ticket = True
             elif registration.person.is_volunteer():
                 ticket = 'Volunteer'
 
-            region = 'world'
-            country = registration.person.country or ''
-            country = country.strip().lower()
-            if country == 'australia':
-                region = 'australia'
-            elif country == 'switzerland':
-                region = 'switzerland'
-            elif country == 'canada':
-                region = 'canada'
-            elif country == 'finland':
-                region = 'finland'
-            elif country == 'norway':
-                region = 'norway'
-            elif country in ['new zealand', 'nz']:
-                region = 'new_zealand'
+            if registration.person.is_speaker():
+                ticket += ', Speaker'
 
             data = {
                 'ticket': ticket,
                 'firstname' : self._sanitise_badge_field(registration.person.firstname),
                 'lastname' : self._sanitise_badge_field(registration.person.lastname),
                 'company': self._sanitise_badge_field(registration.person.company),
-                'dinner_tickets': dinner_tickets,
+                'dinner_tickets': bool(dinner_tickets),
+                'dinner_num': 'x%d' % dinner_tickets if dinner_tickets > 1 else '',
                 'over18': registration.over18
             }
 
@@ -1108,7 +1082,9 @@ class RegistrationController(BaseController):
             if Config.get('pgp_collection', category='rego') != 'no' and registration.keyid:
                 data['gpg'] = self._sanitise_badge_field(registration.keyid)
             return data
-        return {'ticket': '', 'firstname': '', 'lastname': '', 'nickname': '', 'company': '', 'favourites': '', 'gpg': '', 'region': '', 'dinner_tickets': 0, 'speakers_tickets': 0, 'pdns_ticket' : False, 'over18': True, 'silly': '','breakfast': 0}
+        return {'ticket': '', 'firstname': '', 'lastname': '', 'nickname': '',
+                'company': '', 'dinner_num': '', 'dinner_tickets': 0,
+                'over18': True}
 
     def _sanitise_badge_field(self, field):
         if not field:
