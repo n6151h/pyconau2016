@@ -12,7 +12,9 @@
       </div>
     </div>
 
-${ h.hidden('person.company', value='') }</p>
+    <div class="form-group">
+      <input type="text" id="personcompany" class="form-control" placeholder="Company" name="person.company" />
+    </div>
 
 % if c.form is not 'edit' or h.auth.authorized(h.auth.has_organiser_role):
     <div class="form-group">
