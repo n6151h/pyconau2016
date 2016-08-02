@@ -515,39 +515,43 @@ class AdminController(BaseController):
     @authorize(h.auth.has_organiser_role)
     def registered_followup(self):
         """ CSV export of registrations for mail merges [Registrations] """
-        c.data = []
-        c.text = ''
-        c.columns = ('id', 'name', 'firstname', 'email_address', 'country', 'speaker', 'keynote', 'dietary_requirements', 'special_requirements', 'paid')
-        c.noescape = True
-        for r in meta.Session.query(Registration).all():
-          # We only care about people that have valid invoices.
-          if not r.person.has_valid_invoice():
-            continue
+        try:
+            c.data = []
+            c.text = ''
+            c.columns = ('id', 'name', 'firstname', 'email_address', 'ticket', 'speaker', 'keynote', 'dietary_requirements', 'special_requirements', 'paid')
+            c.noescape = True
+            for r in meta.Session.query(Registration).all():
+              # We only care about people that have valid invoices.
+              if not r.person.has_valid_invoice():
+                continue
 
-          row = []
-          row.append(str(r.person.id))
-          row.append(r.person.fullname)
-          row.append(r.person.firstname)
-          row.append(r.person.email_address)
-          row.append(r.person.country)
-          if r.person.is_speaker():
-            row.append('Yes')
-          else:
-            row.append('No')
-          row.append('No')
-          if r.person.is_miniconf_org():
-            row.append('Yes')
-          else:
-            row.append('No')
-          row.append(r.diet)
-          row.append(r.special)
-          if r.person.paid():
-            row.append('Yes')
-          else:
-            row.append('No')
+              row = []
+              row.append(str(r.person.id))
+              row.append(r.person.fullname)
+              row.append(r.person.firstname)
+              row.append(r.person.email_address)
+              row.append(r.ticket_description)
+              if r.person.is_speaker():
+                row.append('Yes')
+              else:
+                row.append('No')
+              row.append('No')
+              if r.person.is_miniconf_org():
+                row.append('Yes')
+              else:
+                row.append('No')
+              row.append(r.diet)
+              row.append(r.special)
+              if r.person.paid():
+                row.append('Yes')
+              else:
+                row.append('No')
 
-          c.data.append(row)
-        return table_response()
+              c.data.append(row)
+            return table_response()
+        except:
+            log.exception('ASDF')
+            raise
 
     @authorize(h.auth.has_organiser_role)
     def registered_speakers(self):
@@ -2108,7 +2112,7 @@ def table_csv_response():
     f = StringIO.StringIO()
     w = csv.writer(f)
     w.writerow(c.columns)
-    w.writerows([unicode(s or '').encode('utf8') for s in c.data])
+    w.writerows(c.data)
     response.headers['Content-type']='text/plain; charset=utf-8'
     response.headers['Content-Disposition']='attachment; filename="table.csv"'
     return f.getvalue()
