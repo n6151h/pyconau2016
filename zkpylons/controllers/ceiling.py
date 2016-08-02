@@ -83,6 +83,8 @@ class CeilingController(BaseController):
                 if not invoice_item.invoice.status == 'Invalid':
                     person = invoice_item.invoice.person
                     rego = person.registration
+                    if not rego:
+                        continue
                     c.specials.append(SpecStruct(
                         id=person.id,
                         person_id=person.id,
