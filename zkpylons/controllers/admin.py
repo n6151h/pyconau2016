@@ -546,6 +546,8 @@ class AdminController(BaseController):
           else:
             row.append('No')
 
+          row = [unicode(s or '').encode('utf8') for s in row]
+
           c.data.append(row)
         return table_response()
 
