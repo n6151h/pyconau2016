@@ -2108,7 +2108,7 @@ def table_csv_response():
     f = StringIO.StringIO()
     w = csv.writer(f)
     w.writerow(c.columns)
-    w.writerows([unicode(s).encode('utf8') for s in c.data])
+    w.writerows([unicode(s or '').encode('utf8') for s in c.data])
     response.headers['Content-type']='text/plain; charset=utf-8'
     response.headers['Content-Disposition']='attachment; filename="table.csv"'
     return f.getvalue()
