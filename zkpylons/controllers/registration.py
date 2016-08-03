@@ -831,7 +831,7 @@ class RegistrationController(BaseController):
                     registration_list.remove(registration)
                 elif filter.has_key('status') and filter['status'] == 'unpaid' and registration.person.paid():
                     registration_list.remove(registration)
-                elif filter.has_key('diet') and filter['diet'] == 'true' and (registration.diet == '' or registration.diet.lower() in ('n/a', 'none', 'nill', 'nil', 'no')):
+                elif filter.has_key('diet') and filter['diet'] == 'true' and (not registration.diet or registration.diet.lower() in ('n/a', 'none', 'nill', 'nil', 'no')):
                     registration_list.remove(registration)
                 elif filter.has_key('special_needs') and filter['special_needs'] == 'true' and (registration.special == '' or registration.special.lower() in ('n/a', 'none', 'nill', 'nil', 'no')):
                     registration_list.remove(registration)
