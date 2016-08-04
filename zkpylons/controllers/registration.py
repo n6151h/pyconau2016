@@ -906,14 +906,18 @@ class RegistrationController(BaseController):
             if not registration.silly_description:
                 registration.silly_description = ''
 
+            def fckzk(s):
+                if not s: return ''
+                return s.encode('utf8')
+
             data.append([registration.id,
-                         registration.person.firstname.encode('utf-8'),
-                         registration.person.lastname.encode('utf-8'),
-                         registration.person.email_address.encode('utf-8'),
-                         registration.nick.encode('utf-8'),
-                         registration.person.company.encode('utf-8'),
-                         registration.person.state.encode('utf-8'),
-                         registration.person.country.encode('utf-8'),
+                         fckzk(registration.person.firstname),
+                         fckzk(registration.person.lastname),
+                         fckzk(registration.person.email_address),
+                         fckzk(registration.nick),
+                         fckzk(registration.person.company),
+                         fckzk(registration.person.state),
+                         fckzk(registration.person.country),
                          ", ".join(invoices).encode('utf-8'),
                          ", ".join(products).encode('utf-8'),
                          ", ".join(accommodation).encode('utf-8'),
@@ -923,9 +927,9 @@ class RegistrationController(BaseController):
                          registration.person.is_miniconf_org(),
                          registration.person.is_volunteer(),
                          ", ".join([role.name for role in registration.person.roles]),
-                         registration.diet.encode('utf-8'),
-                         registration.special.encode('utf-8'),
-                         registration.silly_description.encode('utf-8'),
+                         fckzk(registration.diet),
+                         fckzk(registration.special),
+                         fckzk(registration.silly_description),
                          registration.over18])
 
 
