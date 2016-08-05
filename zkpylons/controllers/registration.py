@@ -1066,13 +1066,15 @@ class RegistrationController(BaseController):
                             shirts.append('%d x %s' % (item.qty, shirt))
                         elif item.description.find('Student') > -1:
                             ticket = 'Student'
+                        elif item.description.find('Speaker') > -1:
+                            ticket = 'Professional'
                         elif item.description.find('Enthusiast') > -1:
                             ticket = 'Enthusiast'
                         elif item.description.find('Professional') > -1:
                             ticket = 'Professional'
                         elif item.description.find('Press') > -1:
                             ticket = 'Press'
-                        elif item.description.find('Miniconf-Only') > -1:
+                        elif item.description.find('Miniconf Only') > -1:
                             ticket = 'Friday Only'
                         elif 'Sprint' in item.description:
                             sprints = True
@@ -1081,6 +1083,8 @@ class RegistrationController(BaseController):
                 ticket = 'Organiser'
             elif registration.person.is_volunteer():
                 ticket = 'Volunteer'
+            elif registration.person.is_keynote():
+                ticket = 'Keynote'
 
             if registration.person.is_speaker():
                 ticket += ', Speaker'
