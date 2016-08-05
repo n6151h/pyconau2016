@@ -1023,13 +1023,14 @@ class RegistrationController(BaseController):
 
             import os, tempfile
             files = []
-            badge_svg = os.path.join([
+            badge_svg = os.path.join(
                 zkpylons_config.file_paths['base_templates'],
                 'badge.svg'
-            ])
+            )
             for n, badge in enumerate(data):
                 if not n % 2:
-                    soup = BeautifulSoup(badge_svg, "lxml")
+                    with open(badge_svg) as f:
+                        soup = BeautifulSoup(f, "lxml")
                 generate_badge(soup, badge, n % 2)
                 (svg_fd, svg) = tempfile.mkstemp('.svg')
                 svg_f = os.fdopen(svg_fd, 'w')
@@ -1061,7 +1062,7 @@ class RegistrationController(BaseController):
                     for item in invoice.items:
                         if item.description.startswith('Dinner'):
                             dinner_tickets += item.qty
-                        elif 'Shirt' in item.description:
+                        elif item.description.startswith('T-Shirt - '):
                             shirt = item.description[len('T-Shirt - '):]
                             shirts.append('%d x %s' % (item.qty, shirt))
                         elif item.description.find('Student') > -1:
