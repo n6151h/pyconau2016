@@ -2,6 +2,8 @@
 import logging
 import re
 
+from bs4 import BeautifulSoup
+
 from pylons import request, response, session, tmpl_context as c
 from zkpylons.lib.helpers import redirect_to
 from pylons.controllers.util import Response
@@ -20,6 +22,7 @@ from zkpylons.lib.validators import ProductQty, ProductMinMax, IAgreeValidator, 
 from zkpylons.lib.validators import ProDinner, PPDetails, PPChildrenAdult
 
 import zkpylons.lib.helpers as h
+from zkpylons.config import zkpylons_config
 
 from authkit.authorize.pylons_adaptors import authorize
 from authkit.permissions import ValidAuthKitUser
@@ -1019,18 +1022,20 @@ class RegistrationController(BaseController):
             setattr(c, 'data', data)
 
             import os, tempfile
-            c.index = 0
             files = []
-            while c.index < len(c.data):
-                while c.index + 4 > len(c.data):
-                    c.data.append(self._registration_badge_data(False))
-                res = render('registration/badges_svg.mako')
+            badge_svg = os.path.join([
+                zkpylons_config.file_paths['base_templates'],
+                'badge.svg'
+            ])
+            for n, badge in enumerate(data):
+                if not n % 2:
+                    soup = BeautifulSoup(badge_svg, "lxml")
+                generate_badge(soup, badge, n % 2)
                 (svg_fd, svg) = tempfile.mkstemp('.svg')
                 svg_f = os.fdopen(svg_fd, 'w')
-                svg_f.write(res)
+                svg_f.write(soup.encode('utf8'))
                 svg_f.close()
                 files.append(svg)
-                c.index += 4
 
             (tar_fd, tar) = tempfile.mkstemp('.tar.gz')
             os.close(tar_fd)
@@ -1048,11 +1053,17 @@ class RegistrationController(BaseController):
         if registration:
             dinner_tickets = 0
             ticket = ''
+            sprints = False
+            speaker = False
+            shirts = []
             for invoice in registration.person.invoices:
                 if invoice.is_paid and not invoice.is_void:
                     for item in invoice.items:
                         if item.description.startswith('Dinner'):
                             dinner_tickets += item.qty
+                        elif 'Shirt' in item.description:
+                            shirt = item.description[len('T-Shirt - '):]
+                            shirts.append('%d x %s' % (item.qty, shirt))
                         elif item.description.find('Student') > -1:
                             ticket = 'Student'
                         elif item.description.find('Enthusiast') > -1:
@@ -1063,6 +1074,8 @@ class RegistrationController(BaseController):
                             ticket = 'Press'
                         elif item.description.find('Miniconf-Only') > -1:
                             ticket = 'Friday Only'
+                        elif 'Sprint' in item.description:
+                            sprints = True
 
             if registration.person.has_role('core_team'):
                 ticket = 'Organiser'
@@ -1071,15 +1084,18 @@ class RegistrationController(BaseController):
 
             if registration.person.is_speaker():
                 ticket += ', Speaker'
+                speaker = True
 
             data = {
                 'ticket': ticket,
                 'firstname' : self._sanitise_badge_field(registration.person.firstname),
                 'lastname' : self._sanitise_badge_field(registration.person.lastname),
                 'company': self._sanitise_badge_field(registration.person.company),
-                'dinner_tickets': bool(dinner_tickets),
-                'dinner_num': 'x%d' % dinner_tickets if dinner_tickets > 1 else '',
-                'over18': registration.over18
+                'dinner_tickets': dinner_tickets,
+                'over18': registration.over18,
+                'sprints': sprints,
+                'speaker': speaker,
+                'shirts': shirts
             }
 
             # For some reason some keys are None even if pgp_collection is yes, should probably fix the real problem.
@@ -1147,3 +1163,51 @@ class RegistrationController(BaseController):
                 c.profs[r.person.company][r.person.lastname].append(r.person.fullname)
 
         response.headers['Content-type']='text/plain; charset=utf-8'
+
+
+GLYPH_PLUS = '+'
+GLYPH_GLASS = u'\ue001'
+GLYPH_DINNER = u'\ue179'
+GLYPH_SPEAKER = u'\ue122'
+GLYPH_SPRINTS = u'\ue254'
+
+
+def text_size(text, prev=9999):
+    n = len(text)
+    size = int(min(70, max(35, 35 + 35 * (1 - (n - 7)/13.))))
+    return min(prev, size)
+
+
+def set_text(soup, text_id, text, resize=None):
+    elem = soup.find(id=text_id).tspan
+    elem.string = text
+    if resize:
+        style = elem['style']
+        elem['style'] = style.replace('font-size:70px', 'font-size:%dpx' % resize)
+
+
+def generate_badge(soup, data, n):
+    side = 'lr'[n]
+    for tb in 'tb':
+        part = tb + side
+        size = text_size(data['firstname'])
+        set_text(soup, 'firstname-' + part, data['firstname'], size)
+        size = text_size(data['lastname'], size)
+        set_text(soup, 'lastname-' + part, data['lastname'], size)
+        size = text_size(data['company'], size)
+        set_text(soup, 'company-' + part, data['company'], size)
+        set_text(soup, 'ticket-' + part, data['ticket'])
+        icons = []
+        if data['speaker']:
+            icons.append(GLYPH_SPEAKER)
+        if data['sprints']:
+            icons.append(GLYPH_SPRINTS)
+        if data['over18']:
+            icons.append(GLYPH_GLASS)
+        if data['dinner_tickets'] > 1:
+            icons.append(GLYPH_DINNER + 'x%d' % data['dinner_tickets'])
+        elif data['dinner_tickets']:
+            icons.append(GLYPH_DINNER)
+        set_text(soup, 'icons-' + part, ' '.join(icons))
+        if data['shirts']:
+            set_text(soup, 'shirt-' + side, '; '.join(data['shirts']))

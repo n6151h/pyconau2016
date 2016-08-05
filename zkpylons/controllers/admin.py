@@ -1503,7 +1503,7 @@ class AdminController(BaseController):
             type.append("Volunteer")
 
           if len(type) > 0:
-            row.append(",\\newline ".join(type))
+            row.append(", ".join(type))
           else:
             row.append("No valid ticket")
           row.append(bag)
