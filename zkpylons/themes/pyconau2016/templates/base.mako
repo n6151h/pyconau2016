@@ -87,6 +87,7 @@
         <br><b>Gold</b>
         <br><img class="img-responsive center-block" title="Google" src="/img/logos/google.png">
         <br><img class="img-responsive center-block" title="Optiver" src="/img/logos/optiver.png">
+        <br><img class="img-responsive center-block" title="HPE" src="/img/logos/HPE.png">
       </div>
     </div>
   </div>
