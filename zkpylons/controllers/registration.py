@@ -1021,33 +1021,20 @@ class RegistrationController(BaseController):
             meta.Session.commit() # save badge printed data
             setattr(c, 'data', data)
 
-            import os, tempfile
-            files = []
-            badge_svg = os.path.join(
-                zkpylons_config.file_paths['base_templates'],
-                'badge.svg'
-            )
-            for n, badge in enumerate(data):
-                if not n % 2:
-                    with open(badge_svg) as f:
-                        soup = BeautifulSoup(f, "lxml")
-                generate_badge(soup, badge, n % 2)
-                (svg_fd, svg) = tempfile.mkstemp('.svg')
-                svg_f = os.fdopen(svg_fd, 'w')
-                svg_f.write(soup.encode('utf8'))
-                svg_f.close()
-                files.append(svg)
+            columns = list(data[0].keys())
+            data = [  [unicode(r[k]).encode('utf8') for k in columns] for r in data ]
 
-            (tar_fd, tar) = tempfile.mkstemp('.tar.gz')
-            os.close(tar_fd)
-            os.system('tar -zcvf %s %s' % (tar, " ".join(files)))
-
-            tar_f = file(tar)
-            res = Response(tar_f.read())
-            tar_f.close()
-            res.headers['Content-type'] = 'application/octet-stream'
-            res.headers['Content-Disposition'] = ( 'attachment; filename=badges.tar.gz' )
+            import csv, StringIO
+            f = StringIO.StringIO()
+            w = csv.writer(f)
+            w.writerow(columns)
+            w.writerows(data)
+            res = Response(f.getvalue())
+            res.headers['Content-type'] = 'text/plain; charset=utf-8'
+            res.headers[
+                'Content-Disposition'] = 'attachment; filename="table.csv"'
             return res
+
         return render('registration/generate_badges.mako')
 
     def _registration_badge_data(self, registration):
