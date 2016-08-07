@@ -517,7 +517,7 @@ class AdminController(BaseController):
         """ CSV export of registrations for mail merges [Registrations] """
         c.data = []
         c.text = ''
-        c.columns = ('id', 'name', 'firstname', 'email_address', 'country', 'speaker', 'keynote', 'dietary_requirements', 'special_requirements', 'paid')
+        c.columns = ('id', 'name', 'firstname', 'email_address', 'ticket', 'speaker', 'keynote', 'dietary_requirements', 'special_requirements', 'paid')
         c.noescape = True
         for r in meta.Session.query(Registration).all():
           # We only care about people that have valid invoices.
@@ -529,7 +529,7 @@ class AdminController(BaseController):
           row.append(r.person.fullname)
           row.append(r.person.firstname)
           row.append(r.person.email_address)
-          row.append(r.person.country)
+          row.append(r.ticket_description())
           if r.person.is_speaker():
             row.append('Yes')
           else:
@@ -545,6 +545,8 @@ class AdminController(BaseController):
             row.append('Yes')
           else:
             row.append('No')
+
+          row = [unicode(s or '').encode('utf8') for s in row]
 
           c.data.append(row)
         return table_response()
@@ -1501,7 +1503,7 @@ class AdminController(BaseController):
             type.append("Volunteer")
 
           if len(type) > 0:
-            row.append(",\\newline ".join(type))
+            row.append(", ".join(type))
           else:
             row.append("No valid ticket")
           row.append(bag)
