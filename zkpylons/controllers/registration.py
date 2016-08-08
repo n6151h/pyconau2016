@@ -1043,17 +1043,37 @@ class RegistrationController(BaseController):
             ticket = ''
             sprints = False
             speaker = False
-            shirts = []
+            friday = False
+            shirts = {}
+            products = {}
+            num_ticket = 0
             for invoice in registration.person.invoices:
                 if invoice.is_paid and not invoice.is_void:
                     for item in invoice.items:
-                        if item.description.startswith('Dinner'):
+                        if item.product_id:
+                            if item.product_id not in products:
+                                products[item.product_id] = item.product.category.name
+                            category = products[item.product_id]
+                        else:
+                            category = ''
+                        if category == 'Ticket':
+                            num_ticket += item.qty
+                        if category == 'Dinner Ticket':
                             dinner_tickets += item.qty
-                        elif item.description.startswith('T-Shirt - '):
+                        elif category == 'T-Shirt':
                             shirt = item.description[len('T-Shirt - '):]
-                            shirts.append('%d x %s' % (item.qty, shirt))
+                            if shirt in shirts:
+                                shirts[shirt] += item.qty
+                            else:
+                                shirts[shirt] = item.qty
+                        elif category == 'Miniconfs' and item.description != 'Friday No Miniconf':
+                            friday = True
+                        elif category == 'Development Sprints':
+                            sprints = True
                         elif item.description.find('Student') > -1:
                             ticket = 'Student'
+                        elif item.description.find('Contributor') > -1:
+                            ticket = u'\u22c6Contributor\u22c6'
                         elif item.description.find('Speaker') > -1:
                             ticket = 'Professional'
                         elif item.description.find('Enthusiast') > -1:
@@ -1064,18 +1084,21 @@ class RegistrationController(BaseController):
                             ticket = 'Press'
                         elif item.description.find('Miniconf Only') > -1:
                             ticket = 'Friday Only'
-                        elif 'Sprint' in item.description:
-                            sprints = True
 
-            if registration.person.has_role('core_team'):
+            if not num_ticket:
+                ticket = 'Guest'
+
+            shirts = ['%d x %s' % (qty, shirt) for shirt, qty in shirts.items() if qty > 0]
+
+            if registration.person.has_role('team') or registration.person.has_role('organiser') or registration.person.has_role('miniconf'):
                 ticket = 'Organiser'
-            elif registration.person.is_volunteer():
+            elif registration.person.has_role('volunteer'):
                 ticket = 'Volunteer'
-            elif registration.person.is_keynote():
-                ticket = 'Keynote'
 
-            if registration.person.is_speaker():
-                ticket += ', Speaker'
+            if registration.person.has_role('keynote'):
+                ticket = 'Keynote'
+                speaker = True
+            elif registration.person.is_speaker():
                 speaker = True
 
             data = {
@@ -1086,6 +1109,7 @@ class RegistrationController(BaseController):
                 'dinner_tickets': dinner_tickets,
                 'over18': registration.over18,
                 'sprints': sprints,
+                'friday': friday,
                 'speaker': speaker,
                 'shirts': shirts
             }
