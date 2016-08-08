@@ -1086,7 +1086,8 @@ class RegistrationController(BaseController):
                             ticket = 'Friday Only'
 
             if not num_ticket:
-                for product in registration.products:
+                for rproduct in registration.products:
+                    product = rproduct.product
                     if product.category_id == 1:
                         if product.description.find('Student') > -1:
                             ticket = 'Student'
