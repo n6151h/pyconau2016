@@ -1086,7 +1086,25 @@ class RegistrationController(BaseController):
                             ticket = 'Friday Only'
 
             if not num_ticket:
-                ticket = 'Guest'
+                for product in registration.products:
+                    if product.category_id == 1:
+                        if product.description.find('Student') > -1:
+                            ticket = 'Student'
+                        elif product.description.find('Contributor') > -1:
+                            ticket = u'\u22c6Contributor\u22c6'
+                        elif product.description.find('Speaker') > -1:
+                            ticket = 'Professional'
+                        elif product.description.find('Enthusiast') > -1:
+                            ticket = 'Enthusiast'
+                        elif product.description.find('Professional') > -1:
+                            ticket = 'Professional'
+                        elif product.description.find('Press') > -1:
+                            ticket = 'Press'
+                        elif product.description.find('Miniconf Only') > -1:
+                            ticket = 'Friday Only'
+                        break
+                else:
+                    ticket = 'Guest'
 
             shirts = ['%d x %s' % (qty, shirt) for shirt, qty in shirts.items() if qty > 0]
 
