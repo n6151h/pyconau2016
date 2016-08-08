@@ -989,7 +989,7 @@ class RegistrationController(BaseController):
 
                 for registration in registration_list:
                     append = False
-                    if registration.person.has_paid_ticket() and not registration.person.badge_printed:
+                    if not registration.person.badge_printed:
                         if defaults['type'] == 'all':
                             append = True
                         else:
@@ -1093,6 +1093,7 @@ class RegistrationController(BaseController):
 
             data = {
                 'ticket': ticket,
+                'paid': registration.person.has_paid_ticket(),
                 'firstname' : self._sanitise_badge_field(registration.person.firstname),
                 'lastname' : self._sanitise_badge_field(registration.person.lastname),
                 'company': self._sanitise_badge_field(registration.person.company),
